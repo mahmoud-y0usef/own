@@ -1,5 +1,62 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="theme-color" content="#8B4513">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- Preload Critical Resources -->
+<link rel="preload" href="assets/css/rtl.css" as="style">
+<link rel="preload" href="assets/css/theme.css" as="style">
+<link rel="preload" href="assets/fonts/fonts/themify.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/img/elown.png" as="image">
+
+<!-- DNS Prefetch for External Resources -->
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//unpkg.com">
+<link rel="dns-prefetch" href="//images.unsplash.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+<!-- Preconnect for Critical External Resources -->
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin>
+
+<!-- Critical CSS - Load First -->
+<style>
+/* Critical CSS for Above-the-fold Content */
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navbar { 
+  background: rgba(255,255,255,0.95); 
+  backdrop-filter: blur(10px); 
+  transform: translateZ(0); /* GPU acceleration */
+}
+.hero { 
+  min-height: 50vh; 
+  background: linear-gradient(135deg, #8B4513, #A0522D); 
+  will-change: transform; /* GPU optimization */
+}
+.loading { display: none; }
+/* Optimize images */
+img { 
+  max-width: 100%; 
+  height: auto; 
+  image-rendering: -webkit-optimize-contrast;
+}
+/* Reduce paint areas */
+* { 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+</style>
 
 <meta property="og:title" content="العون لنقل العفش وخدمات الأثاث - قطر">
 <meta property="og:description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. خدمات احترافية بأفضل الأسعار.">
@@ -7,33 +64,43 @@
 <meta property="og:url" content="https://alawn-furniture.com">
 <meta property="og:image" content="assets/img/elown.png">
 
-<!-- Meta -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="keywords" content="نقل العفش, خدمات الأثاث, تصميم داخلي">
 <meta name="description" content="العون لنقل العفش وخدمات الأثاث">
 <meta name="author" content="العون">
 <title>العون لنقل العفش وخدمات الأثاث - قطر</title>
+
 <!-- Favicon -->
 <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
 
-<!-- Bootstrap Styles -->
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Critical CSS First -->
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
 
-<!-- Vendor Styles -->
+<!-- Bootstrap - Load from CDN with defer -->
+<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></noscript>
+
+<!-- Defer Non-Critical CSS -->
+<link rel="preload" href="assets/vendors/font-awesome/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/vendors/slick-carousel/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/fonts/themify-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/vendors/magnific-popup/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/hovereffects.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/scrolling-nav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- Fallback for browsers that don't support preload -->
+<noscript>
 <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
 <link rel="stylesheet" type="text/css" href="assets/vendors/slick-carousel/slick.css">
 <link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons.css">
 <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="assets/css/hovereffects.css">
-<!-- Theme Styles -->
-<link href="assets/css/scrolling-nav.css" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/scrolling-nav.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-<!-- RTL Support -->
-<link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
+</noscript>
 </head>
 <!-- End Head -->
 
@@ -95,7 +162,7 @@
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1100&h=500&fit=crop&crop=center" alt="نقل العفش" width="1100" height="500">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1100&h=500&fit=crop&crop=center" alt="نقل العفش" width="1100" height="500" priority="high">
             <div class="container">
               <div class="carousel-caption">
                 <h2>العون لنقل العفش</h2>
@@ -171,7 +238,7 @@
         <div class="row mb-5">
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="50">
             <div class="d-block mb-4">
-              <img src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=120&h=120&fit=crop&crop=center" alt="خدمات النقل">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=120&h=120&fit=crop&crop=center" alt="خدمات النقل" width="120" height="120">
             </div>
             <h4 class="h5">خدمات النقل</h4>
             <p>نقل آمن وسريع لجميع أنواع الأثاث والعفش مع فريق محترف ومعدات حديثة لضمان سلامة ممتلكاتكم.</p>
@@ -179,7 +246,7 @@
 
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="100">
             <div class="d-block mb-4">
-              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=120&h=120&fit=crop&crop=center" alt="تركيب الأثاث">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=120&h=120&fit=crop&crop=center" alt="تركيب الأثاث" width="120" height="120">
             </div>
             <h4 class="h5">خدمات تركيب الأثاث</h4>
             <p>فريق متخصص في تركيب وفك جميع أنواع الأثاث مع الحفاظ على جودة القطع وضمان التركيب السليم.</p>
@@ -187,7 +254,7 @@
 
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="150">
             <div class="d-block mb-4">
-              <img src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=120&h=120&fit=crop&crop=center" alt="خدمات التغليف">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=120&h=120&fit=crop&crop=center" alt="خدمات التغليف" width="120" height="120">
             </div>
             <h4 class="h5">خدمات التغليف</h4>
             <p>تغليف احترافي لجميع أنواع الأثاث والأغراض باستخدام أجود مواد التغليف لحماية قصوى.</p>
@@ -198,7 +265,7 @@
         <div class="row mb-5">
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
             <div class="d-block mb-4">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&h=120&fit=crop&crop=center" alt="خدمات التخزين">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&h=120&fit=crop&crop=center" alt="خدمات التخزين" width="120" height="120">
             </div>
             <h4 class="h5">خدمات التخزين</h4>
             <p>مخازن آمنة ومكيفة لحفظ أثاثكم لفترات طويلة مع إمكانية الوصول إليها في أي وقت.</p>
@@ -207,7 +274,7 @@
           
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
             <div class="d-block mb-4">
-              <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=120&h=120&fit=crop&crop=center" alt="خدمات الشحن والسفر">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=120&h=120&fit=crop&crop=center" alt="خدمات الشحن والسفر" width="120" height="120">
             </div>
             <h4 class="h5">خدمات الشحن وتجهيز السفر</h4>
             <p>خدمات شحن دولية ومحلية مع تجهيز خاص للمسافرين وضمان وصول الأغراض بأمان.</p>
@@ -237,7 +304,7 @@
         <div class="row justify-content-between align-items-center" data-aos="fade-right" data-aos-easing="linear"
           data-aos-delay="200">
           <div class="col-md-5">
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop&crop=center" width="90%" class="rounded-md" alt="قصة شركة العون">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop&crop=center" width="400" height="300" class="rounded-md" alt="قصة شركة العون">
           </div>
           <div class="col-md-7">
             <h3 class="mb-4">قصة نجاحنا</h3>
@@ -273,7 +340,7 @@
           </div>
 
           <div class="col-md-5">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center" width="90%" class="rounded-md" alt="مهمتنا وأهدافنا">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center" width="400" height="300" class="rounded-md" alt="مهمتنا وأهدافنا">
           </div>
         </div>
       </div>
@@ -1137,31 +1204,33 @@
   </footer>
   <!-- End Footer -->
 
-  <!-- JS Script Files -->
+  <!-- Critical JS - Load First -->
   <script src="assets/vendors/jquery.min.js"></script>
-  <script src="assets/vendors/jquery.migrate.min.js"></script>
-  <script src="assets/vendors/popper.min.js"></script>
   <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/vendors/jquery-easing/jquery.easing.min.js"></script>
+  
+  <!-- Defer Non-Critical JS -->
+  <script defer src="assets/vendors/jquery.migrate.min.js"></script>
+  <script defer src="assets/vendors/popper.min.js"></script>
+  <script defer src="assets/vendors/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Components Vendor  -->
-  <script src="assets/vendors/slick-carousel/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-  <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="assets/vendors/counters/waypoint.min.js"></script>
-  <script src="assets/vendors/counters/counterup.min.js"></script>
+  <!-- Components Vendor - Load with defer -->
+  <script defer src="assets/vendors/slick-carousel/slick.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script defer src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script defer src="assets/vendors/counters/waypoint.min.js"></script>
+  <script defer src="assets/vendors/counters/counterup.min.js"></script>
 
   <!-- <script src="assets/contact/jqBootstrapValidation.js"></script> -->
   <!-- <script src="assets/contact/contact_me.js"></script> -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/scrolling-nav.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="assets/js/scrolling-nav.js"></script>
   <!--Plugin Initialize-->
-  <script src="assets/js/global.js"></script>
-  <script src="assets/js/enhancements.js"></script>
+  <script defer src="assets/js/global.js"></script>
+  <script defer src="assets/js/enhancements.js"></script>
 
   <!-- Theme Components and Settings -->
-  <script src="assets/vendors/carousel.js"></script>
-  <script src="assets/vendors/counters.js"></script>
+  <script defer src="assets/vendors/carousel.js"></script>
+  <script defer src="assets/vendors/counters.js"></script>
 
   <!-- AOS Animation Library مع تحسينات للأجهزة المحمولة -->
   <script>
@@ -1446,29 +1515,8 @@
         });
       });
 
-      // روابط الفهرس في قسم النصائح
-      const tipLinks = document.querySelectorAll('#tips a[href^="#tip-"]');
-
-      tipLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-
-            // إضافة تأثير بصري
-            targetElement.style.backgroundColor = '#e3f2fd';
-            setTimeout(() => {
-              targetElement.style.backgroundColor = '#f8f9fa';
-            }, 2000);
-          }
-        });
-      });
+  
+      
     });
   </script>
 

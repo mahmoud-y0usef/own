@@ -7,7 +7,9 @@
     --text-color: #333;
     --bg-light: #f8f9fa;
 }
-
+.btn {
+    color: white !important;
+}
 /* استبدال اللون الأزرق بالبني */
 .text-primary {
     color: var(--primary-color) !important;
