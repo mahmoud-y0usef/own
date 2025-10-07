@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="theme-color" content="#8B4513">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 <!-- Preload Critical Resources -->
@@ -27,34 +27,186 @@
 <!-- Critical CSS - Load First -->
 <style>
 /* Critical CSS for Above-the-fold Content */
+:root {
+    --primary-color: #8B4513;
+    --primary-hover: #654321;
+    --secondary-color: #A0522D;
+    --accent-color: #D2691E;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+}
+
+/* Optimize font loading with font-display */
+@font-face {
+  font-family: 'system-fonts';
+  src: local('Segoe UI'), local('Roboto'), local('Helvetica'), local('Arial'), sans-serif;
+  font-display: swap;
+}
+
 body { 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'system-fonts', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   margin: 0; 
   padding: 0; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  text-align: right;
+  /* Optimize text rendering */
+  text-rendering: optimizeSpeed;
 }
+
 .navbar { 
-  background: rgba(255,255,255,0.95); 
+  background: rgba(255,255,255,0.95) !important; 
   backdrop-filter: blur(10px); 
-  transform: translateZ(0); /* GPU acceleration */
+  transform: translateZ(0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primary-color) !important;
+  font-weight: bold;
+  padding: 0.5rem 0 !important;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brand-logo {
+  height: 40px;
+  width: auto;
+  max-width: 50px;
+  margin-bottom: 2px;
+}
+
+.brand-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.navbar-nav {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  padding: 5px 15px !important;
+  transition: all 0.3s ease;
+}
+
 .hero { 
-  min-height: 50vh; 
+  min-height: 100vh; 
   background: linear-gradient(135deg, #8B4513, #A0522D); 
-  will-change: transform; /* GPU optimization */
+  will-change: transform;
+  position: relative;
+  /* Optimize compositing */
+  contain: layout style paint;
 }
-.loading { display: none; }
+
+.carousel {
+  height: 100vh;
+  /* GPU acceleration */
+  transform: translateZ(0);
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  /* Optimize for GPU */
+  will-change: transform;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
 /* Optimize images */
 img { 
   max-width: 100%; 
   height: auto; 
   image-rendering: -webkit-optimize-contrast;
+  /* Optimize decoding */
+  decoding: async;
 }
-/* Reduce paint areas */
+
+/* Reduce paint areas and optimize rendering */
 * { 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  /* Optimize box-sizing */
+  box-sizing: border-box;
+}
+
+/* Loading state */
+.loading { display: none; }
+
+/* Basic responsive */
+@media (max-width: 768px) {
+  .hero { min-height: 70vh; }
+  .carousel, .carousel-item { height: 70vh; min-height: 400px; }
+  .carousel-caption h2 { font-size: 1.8rem; }
+  .carousel-caption p { font-size: 1rem; }
+  .brand-text { font-size: 0.75rem; }
+  
+  /* Optimize mobile performance */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 </style>
 
@@ -73,8 +225,12 @@ img {
 <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
 
 <!-- Critical CSS First -->
+<link rel="preload" href="assets/css/theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/rtl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
 <link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
+</noscript>
 
 <!-- Bootstrap - Load from CDN with defer -->
 <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -1204,33 +1360,143 @@ img {
   </footer>
   <!-- End Footer -->
 
-  <!-- Critical JS - Load First -->
+  <!-- Essential JS Only -->
   <script src="assets/vendors/jquery.min.js"></script>
   <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
   
-  <!-- Defer Non-Critical JS -->
-  <script defer src="assets/vendors/jquery.migrate.min.js"></script>
-  <script defer src="assets/vendors/popper.min.js"></script>
-  <script defer src="assets/vendors/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Components Vendor - Load with defer -->
-  <script defer src="assets/vendors/slick-carousel/slick.min.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-  <script defer src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script defer src="assets/vendors/counters/waypoint.min.js"></script>
-  <script defer src="assets/vendors/counters/counterup.min.js"></script>
-
-  <!-- <script src="assets/contact/jqBootstrapValidation.js"></script> -->
-  <!-- <script src="assets/contact/contact_me.js"></script> -->
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Add jQuery Easing inline to fix scrolling-nav.js -->
+  <script>
+  // Simple jQuery easing functions to replace missing easing library
+  $.extend($.easing, {
+    easeInOutExpo: function (x, t, b, c, d) {
+      if (t == 0) return b;
+      if (t == d) return b + c;
+      if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+      return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+    },
+    swing: function (x, t, b, c, d) {
+      return -c * (t /= d) * (t - 2) + b;
+    },
+    linear: function (x, t, b, c, d) {
+      return c * t / d + b;
+    }
+  });
+  </script>
+  
   <script defer src="assets/js/scrolling-nav.js"></script>
-  <!--Plugin Initialize-->
-  <script defer src="assets/js/global.js"></script>
-  <script defer src="assets/js/enhancements.js"></script>
-
-  <!-- Theme Components and Settings -->
-  <script defer src="assets/vendors/carousel.js"></script>
-  <script defer src="assets/vendors/counters.js"></script>
+  
+  <!-- Load on demand - only when needed -->
+  <script>
+  // Advanced Lazy Loading with Intersection Observer
+  function setupLazyLoading() {
+    if (!('IntersectionObserver' in window)) return; // Fallback for old browsers
+    
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+  }
+  
+  // Efficient script loading with caching
+  const loadedScripts = new Set();
+  function loadScript(src, callback) {
+    if (loadedScripts.has(src)) {
+      callback && callback();
+      return;
+    }
+    
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = function() {
+      loadedScripts.add(src);
+      callback && callback();
+    };
+    script.onerror = function() {
+      console.warn('Failed to load script:', src);
+    };
+    
+    // Use requestIdleCallback for non-critical scripts
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => document.head.appendChild(script));
+    } else {
+      setTimeout(() => document.head.appendChild(script), 0);
+    }
+  }
+  
+  // Optimized AOS loading
+  let aosLoaded = false;
+  function maybeLoadAOS() {
+    if (!aosLoaded) {
+      aosLoaded = true;
+      loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({ 
+            duration: 600, 
+            once: true, 
+            offset: 100,
+            disable: window.innerWidth < 768 // Disable on mobile for performance
+          });
+        }
+      });
+    }
+  }
+  
+  // Conditional loading based on viewport
+  function maybeLoadSlick() {
+    const portfolioSection = document.querySelector('.portfolio-section, .slick-needed');
+    if (portfolioSection && !loadedScripts.has('assets/vendors/slick-carousel/slick.min.js')) {
+      loadScript('assets/vendors/slick-carousel/slick.min.js');
+    }
+  }
+  
+  // Throttled scroll handler
+  let scrollTimeout;
+  function throttledScrollHandler() {
+    if (scrollTimeout) return;
+    
+    scrollTimeout = requestAnimationFrame(() => {
+      maybeLoadSlick();
+      scrollTimeout = null;
+    });
+  }
+  
+  // Initialize everything efficiently
+  function initialize() {
+    // Setup lazy loading first
+    setupLazyLoading();
+    
+    // Use passive listeners for performance
+    window.addEventListener('scroll', throttledScrollHandler, { passive: true });
+    
+    // Load AOS after initial paint
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(maybeLoadAOS, { timeout: 2000 });
+    } else {
+      setTimeout(maybeLoadAOS, 800);
+    }
+  }
+  
+  // Use the most efficient DOM ready approach
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize);
+  } else {
+    initialize();
+  }
+  </script>
 
   <!-- AOS Animation Library مع تحسينات للأجهزة المحمولة -->
   <script>
@@ -1261,35 +1527,39 @@ img {
       const isSlowDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2;
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      // إعدادات AOS متكيفة
-      if (isMobile || isSlowDevice || prefersReducedMotion) {
-        // للأجهزة المحمولة أو البطيئة - أنيميشن مبسط
-        AOS.init({
-          duration: 300,
-          easing: 'ease',
-          once: true,
-          mirror: false,
-          disable: function () {
-            return window.innerWidth < 480; // تعطيل AOS في الشاشات الصغيرة جداً
-          }
-        });
-      } else {
-        // للأجهزة المكتبية - أنيميشن كامل
-        AOS.init({
-          duration: 600,
-          easing: 'ease-in-out',
-          once: true,
-          mirror: false,
-          offset: 100
-        });
+      // إعدادات AOS متكيفة - مع فحص وجود AOS أولاً
+      if (typeof AOS !== 'undefined') {
+        if (isMobile || isSlowDevice || prefersReducedMotion) {
+          // للأجهزة المحمولة أو البطيئة - أنيميشن مبسط
+          AOS.init({
+            duration: 300,
+            easing: 'ease',
+            once: true,
+            mirror: false,
+            disable: function () {
+              return window.innerWidth < 480; // تعطيل AOS في الشاشات الصغيرة جداً
+            }
+          });
+        } else {
+          // للأجهزة المكتبية - أنيميشن كامل
+          AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            offset: 100
+          });
+        }
       }
 
-      // تحديث AOS عند تغيير حجم الشاشة
+      // تحديث AOS عند تغيير حجم الشاشة فقط إذا كان موجوداً
       let resizeTimer;
       window.addEventListener('resize', function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
-          AOS.refresh();
+          if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+          }
         }, 100);
       });
     });
