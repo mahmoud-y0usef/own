@@ -267,6 +267,9 @@
     transition: all 0.3s ease;
     background-color: #fff;
 }
+.form-control{
+    padding: 0;
+}
 
 [dir="rtl"] .form-control:focus {
     border-color: #8B4513;
