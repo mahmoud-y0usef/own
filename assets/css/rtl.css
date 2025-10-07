@@ -1044,6 +1044,9 @@ a:hover {
 #blog .text-muted {
     color: rgb(0, 0, 0) !important;
 }
+#blog .description {
+    color: rgb(255, 255, 255) !important;
+}
 
 #blog .author {
     color: #df6a17 !important;
