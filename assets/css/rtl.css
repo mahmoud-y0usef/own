@@ -40,6 +40,15 @@
     transition: all 0.3s ease;
 }
 
+.btn-brown{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
 .btn-brown:hover {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
@@ -1021,9 +1030,19 @@ a:hover {
     color: white;
     font-weight: 600;
 }
+.more {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.more:hover {
+    color: white !important;
+    text-decoration: underline;
+}
 
 #blog .text-muted {
-    color: #ffffff !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 #blog .author {
