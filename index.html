@@ -681,12 +681,12 @@ img {
           </div>
         </div>
         <div class="portfolio-menu mt-2 mb-4 pb-3">
-          <ul>
-            <li class="btn mr-2 btn-outline-dark active" data-filter="*">جميع الخدمات</li>
-            <li class="btn mr-2 btn-outline-dark" data-filter=".moving">نقل العفش</li>
-            <li class="btn mr-2 btn-outline-dark" data-filter=".assembly">تركيب الأثاث</li>
-            <li class="btn mr-2 btn-outline-dark" data-filter=".packing">التغليف والتخزين</li>
-            <li class="btn mr-2 btn-outline-dark" data-filter=".maintenance">الصيانة</li>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="btn mr-2 mb-2 btn-outline-dark active" data-filter="*">جميع الخدمات</li>
+            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".moving">نقل العفش</li>
+            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".assembly">تركيب الأثاث</li>
+            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".packing">التغليف والتخزين</li>
+            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".maintenance">الصيانة</li>
           </ul>
         </div>
 
@@ -695,11 +695,11 @@ img {
           <div class="col-12">
             <h4 class="text-center mb-4">فيديوهات من خدماتنا</h4>
           </div>
-          <div class="col-lg-6 col-md-6 mb-4">
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
             <div class="video-container">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                  allowfullscreen title="عملية نقل عفش منزلي كاملة"></iframe>
+                  allowfullscreen title="عملية نقل عفش منزلي كاملة" loading="lazy"></iframe>
               </div>
               <div class="video-caption mt-2">
                 <h6>عملية نقل عفش منزلي كاملة</h6>
@@ -707,11 +707,11 @@ img {
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 mb-4">
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
             <div class="video-container">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                  allowfullscreen title="تركيب مطبخ حديث"></iframe>
+                  allowfullscreen title="تركيب مطبخ حديث" loading="lazy"></iframe>
               </div>
               <div class="video-caption mt-2">
                 <h6>تركيب مطبخ حديث</h6>
@@ -724,17 +724,23 @@ img {
         <!-- معرض الصور -->
         <div class="portfolio-item row" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
           <!-- نقل العفش -->
-          <div class="item moving col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center"
-                alt="نقل العفش">
+              <img class="img-fluid img-responsive lazyload gallery-image" 
+                data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="نقل العفش"
+                data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
+                data-title="نقل العفش المنزلي" 
+                data-description="فريق محترف ومعدات حديثة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>نقل العفش المنزلي</h5>
                   <p>فريق محترف ومعدات حديثة</p>
-                  <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
+                    data-title="نقل العفش المنزلي" 
+                    data-description="فريق محترف ومعدات حديثة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -742,17 +748,23 @@ img {
             </div>
           </div>
 
-          <div class="item assembly col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item assembly col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400&h=300&fit=crop&crop=center"
-                alt="تركيب الأثاث">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="تركيب الأثاث"
+                data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
+                data-title="تركيب الأثاث" 
+                data-description="تركيب احترافي وفك وتجميع">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تركيب الأثاث</h5>
                   <p>تركيب احترافي وفك وتجميع</p>
-                  <a href="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
+                    data-title="تركيب الأثاث" 
+                    data-description="تركيب احترافي وفك وتجميع">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -761,17 +773,23 @@ img {
           </div>
 
 
-          <div class="item moving col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop&crop=center"
-                alt="التخزين">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="التخزين"
+                data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
+                data-title="خدمات التخزين" 
+                data-description="مستودعات آمنة ومكيفة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>خدمات التخزين</h5>
                   <p>مستودعات آمنة ومكيفة</p>
-                  <a href="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
+                    data-title="خدمات التخزين" 
+                    data-description="مستودعات آمنة ومكيفة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -779,17 +797,23 @@ img {
             </div>
           </div>
 
-          <div class="item assembly col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item assembly col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=400&h=300&fit=crop&crop=center"
-                alt="تركيب المطابخ">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="تركيب المطابخ"
+                data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
+                data-title="تركيب المطابخ" 
+                data-description="فك وتركيب المطابخ والأجهزة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تركيب المطابخ</h5>
                   <p>فك وتركيب المطابخ والأجهزة</p>
-                  <a href="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
+                    data-title="تركيب المطابخ" 
+                    data-description="فك وتركيب المطابخ والأجهزة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -797,17 +821,23 @@ img {
             </div>
           </div>
 
-          <div class="item maintenance col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item maintenance col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop&crop=center"
-                alt="الصيانة">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="الصيانة"
+                data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
+                data-title="خدمات الصيانة" 
+                data-description="صيانة وإصلاح الأثاث">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>خدمات الصيانة</h5>
                   <p>صيانة وإصلاح الأثاث</p>
-                  <a href="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
+                    data-title="خدمات الصيانة" 
+                    data-description="صيانة وإصلاح الأثاث">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -815,17 +845,23 @@ img {
             </div>
           </div>
 
-          <div class="item packing col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item packing col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center"
-                alt="الكراتين">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="الكراتين"
+                data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
+                data-title="توفير الكراتين" 
+                data-description="كراتين عالية الجودة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>توفير الكراتين</h5>
                   <p>كراتين عالية الجودة</p>
-                  <a href="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
+                    data-title="توفير الكراتين" 
+                    data-description="كراتين عالية الجودة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -833,17 +869,23 @@ img {
             </div>
           </div>
 
-          <div class="item moving col-lg-3 col-md-4 col-6 col-sm">
+          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive"
-                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop&crop=center"
-                alt="تحميل الشاحنات">
+              <img class="img-fluid img-responsive lazyload gallery-image"
+                data-src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop&crop=center"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+                alt="تحميل الشاحنات"
+                data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
+                data-title="تحميل الشاحنات" 
+                data-description="تحميل وتفريغ احترافي">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تحميل الشاحنات</h5>
                   <p>تحميل وتفريغ احترافي</p>
-                  <a href="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
-                    class="btn btn-brown btn-sm popup-btn" data-fancybox-group="gallery">
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                    data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
+                    data-title="تحميل الشاحنات" 
+                    data-description="تحميل وتفريغ احترافي">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -860,6 +902,20 @@ img {
       </div>
       </div>
     </section>
+
+    <!-- Lightbox for gallery -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev">&#10094;</span>
+        <span class="lightbox-nav lightbox-next">&#10095;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption">
+          <h5 id="lightbox-title"></h5>
+          <p id="lightbox-description"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- قسم المدونة -->
     <section id="blog" class="section py-5" style="background-color: #f8f9fa;">
@@ -1787,6 +1843,150 @@ img {
 
   
       
+    });
+
+    // Lazy loading implementation for portfolio images
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazyload');
+            img.classList.add('lazyloaded');
+            imageObserver.unobserve(img);
+          }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+      });
+
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    } else {
+      // Fallback for older browsers
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        img.src = img.dataset.src;
+        img.classList.remove('lazyload');
+        img.classList.add('lazyloaded');
+      });
+    }
+
+    // Gallery Lightbox functionality
+    let currentImageIndex = 0;
+    let galleryImages = [];
+
+    // Collect all gallery images
+    function initGallery() {
+      const galleryBtns = document.querySelectorAll('.gallery-btn');
+      const galleryImgs = document.querySelectorAll('.gallery-image');
+      
+      // Collect images from buttons (more reliable data source)
+      galleryImages = Array.from(galleryBtns).map(btn => ({
+        img: btn.dataset.img,
+        title: btn.dataset.title,
+        description: btn.dataset.description
+      }));
+
+      // Add click events to buttons
+      galleryBtns.forEach((btn, index) => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          currentImageIndex = index;
+          openLightbox();
+        });
+      });
+
+      // Add click events to images
+      galleryImgs.forEach((img, index) => {
+        img.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          currentImageIndex = index;
+          openLightbox();
+        });
+      });
+    }
+
+    function openLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDescription = document.getElementById('lightbox-description');
+
+      const currentImage = galleryImages[currentImageIndex];
+      
+      lightboxImg.src = currentImage.img;
+      lightboxTitle.textContent = currentImage.title;
+      lightboxDescription.textContent = currentImage.description;
+      
+      lightbox.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // منع التمرير
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // إعادة التمرير
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+      updateLightboxImage();
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+      updateLightboxImage();
+    }
+
+    function updateLightboxImage() {
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDescription = document.getElementById('lightbox-description');
+
+      const currentImage = galleryImages[currentImageIndex];
+      
+      lightboxImg.src = currentImage.img;
+      lightboxTitle.textContent = currentImage.title;
+      lightboxDescription.textContent = currentImage.description;
+    }
+
+    // Event listeners for lightbox
+    document.addEventListener('DOMContentLoaded', function() {
+      initGallery();
+
+      // Close lightbox events
+      document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+      document.getElementById('lightbox').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeLightbox();
+        }
+      });
+
+      // Navigation events
+      document.querySelector('.lightbox-next').addEventListener('click', nextImage);
+      document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.style.display === 'block') {
+          switch(e.key) {
+            case 'Escape':
+              closeLightbox();
+              break;
+            case 'ArrowLeft':
+              prevImage();
+              break;
+            case 'ArrowRight':
+              nextImage();
+              break;
+          }
+        }
+      });
     });
   </script>
 
