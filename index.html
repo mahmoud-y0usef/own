@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="no-js">
-<!-- H            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#price">المدونة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"> المعرض</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-success btn-sm mx-2" href="https://wa.me/1234567890" target="_blank">
-                <i class="fab fa-whatsapp"></i> واتساب
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-brown btn-sm mx-2" href="tel:+1234567890">
-                <i class="fas fa-phone"></i> اتصل الآن
-              </a>
-            </li>ad>
-  <title>العون لنقل العفش وخدمات الأثاث - قطر | خدمات نقل احترافية</title>
-  <meta name="description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. نقدم خدمات نقل العفش، تركيب الأثاث، التغليف والتخزين، الصيانة والتنظيف بأفضل الأسعار وبجودة عالية.">
-  <meta name="keywords" content="نقل عفش قطر, تركيب أثاث, تخزين عفش, صيانة أثاث, شركة نقل عفش الدوحة, العون لنقل العفش">
-  <meta name="author" content="العون لنقل العفش وخدمات الأثاث">
-  
-  <!-- Open Graph Tags -->
+
 <meta property="og:title" content="العون لنقل العفش وخدمات الأثاث - قطر">
 <meta property="og:description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. خدمات احترافية بأفضل الأسعار.">
 <meta property="og:type" content="website">
@@ -35,7 +14,7 @@
 <meta name="keywords" content="نقل العفش, خدمات الأثاث, تصميم داخلي">
 <meta name="description" content="العون لنقل العفش وخدمات الأثاث">
 <meta name="author" content="العون">
-
+<title>العون لنقل العفش وخدمات الأثاث - قطر</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
 
@@ -64,7 +43,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger d-flex align-items-center" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger d-flex align-items-center" href="#top">
           <div class="brand-container">
             <img src="assets/img/elown.png" alt="العون لنقل العفش" class="brand-logo">
             <div class="brand-text">العون لنقل العفش وخدمات الأثاث</div>
@@ -73,6 +52,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="ti-menu"></span>
+          <!-- أيقونة احتياطية باستخدام Font Awesome -->
+          <i class="fas fa-bars" style="display: none; color: var(--primary-color); font-size: 1.25rem;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
@@ -1184,6 +1165,26 @@
 
   <!-- AOS Animation Library مع تحسينات للأجهزة المحمولة -->
   <script>
+    // إصلاح أيقونة navbar toggler
+    document.addEventListener('DOMContentLoaded', function () {
+      // التحقق من عمل أيقونة ti-menu
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const tiMenuIcon = navbarToggler.querySelector('.ti-menu');
+      const fallbackIcon = navbarToggler.querySelector('.fas.fa-bars');
+      
+      // إذا لم تظهر أيقونة ti-menu بشكل صحيح، استخدم الاحتياطية
+      setTimeout(() => {
+        const computedStyle = window.getComputedStyle(tiMenuIcon, '::before');
+        const content = computedStyle.getPropertyValue('content');
+        
+        // إذا لم تكن الأيقونة تعمل، أظهر الاحتياطية
+        if (!content || content === 'none' || content === '""') {
+          tiMenuIcon.style.display = 'none';
+          fallbackIcon.style.display = 'inline-block';
+        }
+      }, 100);
+    });
+
     // تشغيل AOS مع إعدادات محسنة للأجهزة المحمولة
     document.addEventListener('DOMContentLoaded', function () {
       // تحديد إعدادات AOS حسب حجم الشاشة ونوع الجهاز
@@ -1368,26 +1369,26 @@
       const preferredTime = document.getElementById('preferredTime').value;
 
       // تنسيق الرسالة
-      let message = `🚛 *طلب عرض سعر من موقع العون لنقل العفش* 🚛\n\n`;
-      message += `👤 *الاسم:* ${name}\n`;
-      message += `📱 *رقم الهاتف:* ${phone}\n`;
-      message += `📍 *من:* ${currentCity}\n`;
-      message += `📍 *إلى:* ${destinationCity}\n`;
-      message += `🛍️ *نوع الخدمة:* ${serviceType}\n`;
+      let message = `*طلب عرض سعر من موقع العون لنقل العفش*\n\n`;
+      message += `*الاسم:* ${name}\n`;
+      message += `*رقم الهاتف:* ${phone}\n`;
+      message += `*من:* ${currentCity}\n`;
+      message += `*إلى:* ${destinationCity}\n`;
+      message += `*نوع الخدمة:* ${serviceType}\n\n`;
 
       if (itemsDetails) {
-        message += `📦 *تفاصيل الأغراض:*\n${itemsDetails}\n`;
+        message += `*تفاصيل الأغراض:*\n${itemsDetails}\n\n`;
       }
 
       if (preferredDate) {
-        message += `📅 *التاريخ المفضل:* ${preferredDate}\n`;
+        message += `*التاريخ المفضل:* ${preferredDate}\n`;
       }
 
       if (preferredTime) {
-        message += `🕐 *الوقت المفضل:* ${preferredTime}\n`;
+        message += `*الوقت المفضل:* ${preferredTime}\n`;
       }
 
-      message += `\n✨ نتطلع لخدمتكم بأفضل الأسعار والجودة العالية!`;
+      message += `\nنتطلع لخدمتكم بأفضل الأسعار والجودة العالية`;
 
       // رقم الواتساب
       const whatsappNumber = '97477838390';      // إنشاء رابط الواتساب
@@ -1399,6 +1400,52 @@
 
     // تحسين تجربة المستخدم - التمرير السلس للأقسام
     document.addEventListener('DOMContentLoaded', function () {
+      // كود محسن للتمرير السريع في شريط التنقل
+      const navLinks = document.querySelectorAll('.js-scroll-trigger[href^="#"]');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // السماح لـ jQuery بالعمل أولاً إذا كان موجوداً
+          if (typeof jQuery !== 'undefined') {
+            return; // ترك jQuery يتولى الأمر
+          }
+          
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            // حساب ارتفاع شريط التنقل
+            const navbar = document.querySelector('#mainNav');
+            const navbarHeight = navbar ? navbar.offsetHeight : 70;
+            const offset = navbarHeight + 20;
+            
+            // التمرير السريع
+            const targetPosition = targetElement.offsetTop - offset;
+            
+            // استخدام requestAnimationFrame للحصول على أداء أفضل
+            requestAnimationFrame(() => {
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            });
+            
+            // إغلاق القائمة المنسدلة إذا كانت مفتوحة (للأجهزة المحمولة)
+            const navbarToggler = document.querySelector('.navbar-collapse');
+            if (navbarToggler && navbarToggler.classList.contains('show')) {
+              if (typeof bootstrap !== 'undefined') {
+                const bsCollapse = new bootstrap.Collapse(navbarToggler, {
+                  toggle: false
+                });
+                bsCollapse.hide();
+              }
+            }
+          }
+        });
+      });
+
       // روابط الفهرس في قسم النصائح
       const tipLinks = document.querySelectorAll('#tips a[href^="#tip-"]');
 

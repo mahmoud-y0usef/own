@@ -742,11 +742,75 @@ a:hover {
 .navbar-toggler {
     border-color: var(--primary-color) !important;
     padding: 4px 8px;
+    position: relative;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+/* تحسين إضافي للـ navbar toggler */
+.navbar-toggler {
+    border-color: var(--primary-color) !important;
+    padding: 4px 8px;
+    position: relative;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-toggler .ti-menu {
-    color: var(--primary-color) !important;
-    font-size: 1.25rem;
+    display: none; 
+}
+
+
+.navbar-toggler::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 2px;
+    background-color: var(--primary-color);
+    box-shadow: 
+        0 -5px 0 var(--primary-color),
+        0 5px 0 var(--primary-color);
+    transition: all 0.3s ease;
+    border-radius: 1px;
+}
+
+/* تأثير hover */
+.navbar-toggler:hover::before {
+    background-color: var(--primary-hover);
+    box-shadow: 
+        0 -5px 0 var(--primary-hover),
+        0 5px 0 var(--primary-hover);
+}
+
+/* تحسين للأجهزة المحمولة */
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .navbar-toggler::before {
+        width: 20px;
+        height: 2.5px;
+        box-shadow: 
+            0 -6px 0 var(--primary-color),
+            0 6px 0 var(--primary-color);
+    }
+    
+    .navbar-toggler:hover::before {
+        box-shadow: 
+            0 -6px 0 var(--primary-hover),
+            0 6px 0 var(--primary-hover);
+    }
 }
 
 .navbar-toggler:focus {
@@ -1811,6 +1875,7 @@ a:hover {
 
 #detailed-services .card-body {
     padding: 30px 20px;
+    border-radius: 10px;
 }
 
 /* تحسين الآيقونات بألوان متناسقة */
@@ -1930,7 +1995,7 @@ a:hover {
     padding: 0 15px;
 }
 
-/* تحسين الصور في المعرض */
+
 .gallery-item {
     position: relative;
     overflow: hidden;

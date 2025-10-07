@@ -1,3 +1,30 @@
+/* إضافة سلاسة وسرعة للتمرير */
+html {
+    scroll-behavior: smooth;
+    /* تحسين الأداء للتمرير */
+    scroll-padding-top: 80px; /* تجنب التداخل مع navbar */
+}
+
+/* تحسين التمرير للمتصفحات الحديثة */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* تسريع الانتقالات */
+    * {
+        scroll-behavior: smooth;
+        scroll-snap-stop: normal;
+    }
+}
+
+/* تحسين الأداء */
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 .navbar{
 	background:transparent !important;
 	padding: 0 0;
