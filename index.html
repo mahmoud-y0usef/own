@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="theme-color" content="#8B4513">
+<meta name="theme-color" content="#05339C">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
@@ -28,7 +28,7 @@
 <style>
 /* Critical CSS for Above-the-fold Content */
 :root {
-    --primary-color: #8B4513;
+    --primary-color: #05339C;
     --primary-hover: #654321;
     --secondary-color: #A0522D;
     --accent-color: #D2691E;
@@ -110,7 +110,6 @@ body {
 
 .hero { 
   min-height: 100vh; 
-  background: linear-gradient(135deg, #8B4513, #A0522D); 
   will-change: transform;
   position: relative;
   /* Optimize compositing */
@@ -290,9 +289,6 @@ img {
               <a class="nav-link js-scroll-trigger" href="#about">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#detailed-services">الخدمات التفصيلية</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">المعرض</a>
             </li>
             <li class="nav-item">
@@ -309,7 +305,7 @@ img {
       </div>
     </nav>
     <!-- End Navbar -->
-    <section class="hero-large hero">
+    <section class="hero-large hero" id="top">
       <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -439,12 +435,6 @@ img {
 
        
 
-        <!-- زر للمزيد من الخدمات -->
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center">
-            <a href="#detailed-services" class="btn btn-brown btn-lg">استكشف جميع خدماتنا التفصيلية</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -502,175 +492,7 @@ img {
       </div>
     </section>
 
-    <!-- قسم الخدمات التفصيلية -->
-    <section class="wt-section" id="detailed-services">
-      <div class="container">
-        <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
-          <div class="col-md-8 text-center w-md-50 mx-auto mb-0">
-            <h2 class="mb-md-2 text-brown">خدماتنا التفصيلية</h2>
-            <p class="text-muted">اختر الخدمة التي تحتاجها من قائمتنا الشاملة</p>
-          </div>
-        </div>
 
-        <div class="row">
-          <!-- الصف الأول -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-truck fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل العفش</h5>
-                <p class="card-text">نقل آمن وسريع للعفش المنزلي والمكتبي داخل وخارج المدينة</p>
-                <a href="#service-details-1" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-building fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل الأثاث المكتبي</h5>
-                <p class="card-text">نقل متخصص لأثاث المكاتب والشركات والمؤسسات</p>
-                <a href="#service-details-2" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-tshirt fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل الملابس والعطور</h5>
-                <p class="card-text">نقل آمن للملابس والعطور والأغراض الشخصية الحساسة</p>
-                <a href="#service-details-3" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- الصف الثاني -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-shield-alt fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل الأثاث الحساس</h5>
-                <p class="card-text">نقل خاص للقطع الأثرية والأنتيكات والأجهزة الحساسة</p>
-                <a href="#service-details-4" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-utensils fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل المطابخ وأجهزتها</h5>
-                <p class="card-text">فك وتركيب ونقل المطابخ والأجهزة الكهربائية</p>
-                <a href="#service-details-5" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-dumbbell fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل الأثاث الرياضي والترفيهي</h5>
-                <p class="card-text">نقل الأجهزة الرياضية وأثاث الألعاب والترفيه</p>
-                <a href="#service-details-6" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- الصف الثالث -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-crown fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل الأثاث الفاخر والتحف</h5>
-                <p class="card-text">نقل فائق العناية للأثاث الفاخر والتحف النادرة</p>
-                <a href="#service-details-7" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-tv fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل شاشات التلفاز العملاقة</h5>
-                <p class="card-text">نقل وتركيب الشاشات الكبيرة وأجهزة العرض</p>
-                <a href="#service-details-8" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-lock fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل خزائن النقود</h5>
-                <p class="card-text">نقل آمن ومحمي للخزائن والصناديق الثقيلة</p>
-                <a href="#service-details-9" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- الصف الرابع -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-users fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة توفير سيارات النقل مع/بدون عمال</h5>
-                <p class="card-text">تأجير سيارات النقل مع أو بدون فريق عمل</p>
-                <a href="#service-details-10" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-heart fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل أغراض العرائس</h5>
-                <p class="card-text">نقل خاص لأغراض الزفاف والعرائس بعناية فائقة</p>
-                <a href="#service-details-11" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-palette fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة نقل اللوحات والثريات</h5>
-                <p class="card-text">نقل متخصص للوحات الفنية والثريات الثمينة</p>
-                <a href="#service-details-12" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <!-- الخدمة الأخيرة في المنتصف -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-box fa-3x service-icon mb-3"></i>
-                <h5 class="card-title">خدمة توفير الكراتين ومواد التغليف</h5>
-                <p class="card-text">توفير جميع مواد التغليف والكراتين عالية الجودة</p>
-                <a href="#service-details-13" class="btn btn-brown">تفاصيل أكثر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="wt-section" id="portfolio">
       <div class="container">
@@ -1091,7 +913,7 @@ img {
           <div class="col-12 text-center">
             <a href="#" class="more btn btn-brown btn-lg px-5" data-aos="fade-up">
               <i class="ti-plus me-2"></i>
-              عرض المزيد من المقالات
+              عرض المزيد
             </a>
           </div>
         </div>
@@ -1313,7 +1135,7 @@ img {
                 <i class="fab fa-whatsapp fa-3x ml-4"></i>
                 <div>
                   <h5 class="mb-2 text-white">واتساب - الأسرع!</h5>
-                  <p class="mb-1">77838390</p>
+                  <p class="mb-1">51408899</p>
                   <small>متاح 24/7 للرد السريع</small>
                 </div>
               </div>
@@ -1323,7 +1145,7 @@ img {
                 <i class="fas fa-phone fa-3x ml-4"></i>
                 <div>
                   <h5 class="mb-2 text-white">اتصل بنا</h5>
-                  <p class="mb-1">77838390</p>
+                  <p class="mb-1">51408899</p>
                   <small>خدمة عملاء متميزة</small>
                 </div>
               </div>
@@ -1380,10 +1202,10 @@ img {
 
   <!-- Floating Action Buttons -->
   <div class="floating-buttons">
-    <a href="https://wa.me/97477838390" target="_blank" class="floating-btn whatsapp-btn" title="راسلنا على الواتساب">
+    <a href="https://wa.me/97451408899" target="_blank" class="floating-btn whatsapp-btn" title="راسلنا على الواتساب">
       <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="tel:+97477838390" class="floating-btn call-btn" title="اتصل بنا الآن">
+    <a href="tel:+97451408899" class="floating-btn call-btn" title="اتصل بنا الآن">
       <i class="fas fa-phone"></i>
     </a>
   </div>
@@ -1786,7 +1608,7 @@ img {
       message += `\nنتطلع لخدمتكم بأفضل الأسعار والجودة العالية`;
 
       // رقم الواتساب
-      const whatsappNumber = '97477838390';      // إنشاء رابط الواتساب
+      const whatsappNumber = '97451408899';      // إنشاء رابط الواتساب
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
       // فتح الواتساب
@@ -1795,7 +1617,7 @@ img {
 
     // تحسين تجربة المستخدم - التمرير السلس للأقسام
     document.addEventListener('DOMContentLoaded', function () {
-      // كود محسن للتمرير السريع في شريط التنقل
+    
       const navLinks = document.querySelectorAll('.js-scroll-trigger[href^="#"]');
       
       navLinks.forEach(link => {
@@ -1813,7 +1635,7 @@ img {
           if (targetElement) {
             // حساب ارتفاع شريط التنقل
             const navbar = document.querySelector('#mainNav');
-            const navbarHeight = navbar ? navbar.offsetHeight : 70;
+            const navbarHeight = navbar ? navbar.offsetHeight : 50;
             const offset = navbarHeight + 20;
             
             // التمرير السريع
@@ -1957,6 +1779,8 @@ img {
     // Event listeners for lightbox
     document.addEventListener('DOMContentLoaded', function() {
       initGallery();
+      initPortfolioFilter();
+      initNavbarActiveState();
 
       // Close lightbox events
       document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
@@ -1988,6 +1812,112 @@ img {
         }
       });
     });
+
+    // Portfolio Filter functionality
+    function initPortfolioFilter() {
+      const filterBtns = document.querySelectorAll('.portfolio-menu li[data-filter]');
+      const portfolioItems = document.querySelectorAll('.portfolio-item .item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          
+          // Remove active class from all buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Filter items with smooth animation
+          portfolioItems.forEach(item => {
+            // Remove any existing classes
+            item.classList.remove('hidden', 'visible');
+            
+            if (filter === '*') {
+              // Show all items
+              item.classList.add('visible');
+              item.style.display = 'block';
+            } else {
+              // Check if item has the filter class
+              if (item.classList.contains(filter.substring(1))) {
+                // Show matching items
+                item.classList.add('visible');
+                item.style.display = 'block';
+              } else {
+                // Hide non-matching items
+                item.classList.add('hidden');
+                setTimeout(() => {
+                  if (item.classList.contains('hidden')) {
+                    item.style.display = 'none';
+                  }
+                }, 300);
+              }
+            }
+          });
+        });
+      });
+    }
+
+    // Navbar Active State functionality
+    function initNavbarActiveState() {
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
+      const sections = document.querySelectorAll('section[id]');
+      
+      // Function to update active link based on scroll position
+      function updateActiveNavLink() {
+        let current = '';
+        const scrollY = window.pageYOffset;
+        const navbarHeight = document.querySelector('#mainNav')?.offsetHeight || 70;
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - navbarHeight - 50;
+          const sectionHeight = section.offsetHeight;
+          
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        // Special case for top of page
+        if (scrollY < 100) {
+          current = 'top';
+        }
+        
+        // Update active class
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+      
+      // Debounce scroll function for better performance
+      let scrollTimeout;
+      function debouncedScroll() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateActiveNavLink, 10);
+      }
+      
+      // Update on scroll
+      window.addEventListener('scroll', debouncedScroll);
+      
+      // Update on page load
+      setTimeout(updateActiveNavLink, 100);
+      
+      // Add click event to navbar links for immediate active state
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          // Remove active from all links
+          navLinks.forEach(l => l.classList.remove('active'));
+          // Add active to clicked link
+          this.classList.add('active');
+          
+          // Update after smooth scroll completes
+          setTimeout(updateActiveNavLink, 800);
+        });
+      });
+    }
   </script>
 
   <!-- END JAVASCRIPTS -->

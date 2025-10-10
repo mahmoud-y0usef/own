@@ -74,7 +74,7 @@ html {
     transition: all 1s; 
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
-    background: #dc8e248c !important;
+    
     border-radius: 50px;
 }
 .navbar-brand b{
