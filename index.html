@@ -1,261 +1,287 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="no-js">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="theme-color" content="#05339C">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#05339C">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-<!-- Preload Critical Resources -->
-<link rel="preload" href="assets/css/rtl.css" as="style">
-<link rel="preload" href="assets/css/theme.css" as="style">
-<link rel="preload" href="assets/fonts/fonts/themify.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/img/elown.png" as="image">
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/css/rtl.css" as="style">
+  <link rel="preload" href="assets/css/theme.css" as="style">
+  <link rel="preload" href="assets/fonts/fonts/themify.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/img/elown.png" as="image">
 
-<!-- DNS Prefetch for External Resources -->
-<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
-<link rel="dns-prefetch" href="//unpkg.com">
-<link rel="dns-prefetch" href="//images.unsplash.com">
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <!-- DNS Prefetch for External Resources -->
+  <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+  <link rel="dns-prefetch" href="//unpkg.com">
+  <link rel="dns-prefetch" href="//images.unsplash.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
-<!-- Preconnect for Critical External Resources -->
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin>
+  <!-- Preconnect for Critical External Resources -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin>
 
-<!-- Critical CSS - Load First -->
-<style>
-/* Critical CSS for Above-the-fold Content */
-:root {
-    --primary-color: #05339C;
-    --primary-hover: #654321;
-    --secondary-color: #A0522D;
-    --accent-color: #D2691E;
-    --text-color: #333;
-    --bg-light: #f8f9fa;
-}
+  <!-- Critical CSS - Load First -->
+  <style>
+    /* Critical CSS for Above-the-fold Content */
+    :root {
+      --primary-color: #05339C;
+      --primary-hover: #654321;
+      --secondary-color: #A0522D;
+      --accent-color: #D2691E;
+      --text-color: #333;
+      --bg-light: #f8f9fa;
+    }
 
-/* Optimize font loading with font-display */
-@font-face {
-  font-family: 'system-fonts';
-  src: local('Segoe UI'), local('Roboto'), local('Helvetica'), local('Arial'), sans-serif;
-  font-display: swap;
-}
+    /* Optimize font loading with font-display */
+    @font-face {
+      font-family: 'system-fonts';
+      src: local('Segoe UI'), local('Roboto'), local('Helvetica'), local('Arial'), sans-serif;
+      font-display: swap;
+    }
 
-body { 
-  font-family: 'system-fonts', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  margin: 0; 
-  padding: 0; 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  direction: rtl;
-  text-align: right;
-  /* Optimize text rendering */
-  text-rendering: optimizeSpeed;
-}
+    body {
+      font-family: 'system-fonts', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      direction: rtl;
+      text-align: right;
+      /* Optimize text rendering */
+      text-rendering: optimizeSpeed;
+    }
 
-.navbar { 
-  background: rgba(255,255,255,0.95) !important; 
-  backdrop-filter: blur(10px); 
-  transform: translateZ(0);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-}
+    .navbar {
+      background: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px);
+      transform: translateZ(0);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: var(--primary-color) !important;
-  font-weight: bold;
-  padding: 0.5rem 0 !important;
-}
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: var(--primary-color) !important;
+      font-weight: bold;
+      padding: 0.5rem 0 !important;
+    }
 
-.brand-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+    .brand-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
 
-.brand-logo {
-  height: 40px;
-  width: auto;
-  max-width: 50px;
-  margin-bottom: 2px;
-}
+    .brand-logo {
+      height: 40px;
+      width: auto;
+      max-width: 50px;
+      margin-bottom: 2px;
+    }
 
-.brand-text {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  text-align: center;
-  line-height: 1.2;
-}
+    .brand-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      text-align: center;
+      line-height: 1.2;
+    }
 
-.navbar-nav {
-  margin-right: auto !important;
-  margin-left: 0 !important;
-}
+    .navbar-nav {
+      margin-right: auto !important;
+      margin-left: 0 !important;
+    }
 
-.nav-link {
-  color: var(--primary-color) !important;
-  padding: 5px 15px !important;
-  transition: all 0.3s ease;
-}
+    .nav-link {
+      color: var(--primary-color) !important;
+      padding: 5px 15px !important;
+      transition: all 0.3s ease;
+    }
 
-.hero { 
-  min-height: 100vh; 
-  will-change: transform;
-  position: relative;
-  /* Optimize compositing */
-  contain: layout style paint;
-}
+    .hero {
+      min-height: 100vh;
+      will-change: transform;
+      position: relative;
+      /* Optimize compositing */
+      contain: layout style paint;
+    }
 
-.carousel {
-  height: 100vh;
-  /* GPU acceleration */
-  transform: translateZ(0);
-}
+    .carousel {
+      height: 100vh;
+      /* GPU acceleration */
+      transform: translateZ(0);
+    }
 
-.carousel-item {
-  height: 100vh;
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-  /* Optimize for GPU */
-  will-change: transform;
-}
+    .carousel-item {
+      height: 100vh;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
+      /* Optimize for GPU */
+      will-change: transform;
+    }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 10;
-}
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
 
-.carousel-caption h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-  margin-bottom: 1rem;
-}
+    .carousel-caption h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 1rem;
+    }
 
-.carousel-caption p {
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-}
+    .carousel-caption p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: white;
-  border-radius: 25px;
-  padding: 8px 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: white;
+      border-radius: 25px;
+      padding: 8px 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
 
-.btn-primary:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
-  transform: translateY(-2px);
-}
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      transform: translateY(-2px);
+    }
 
-.text-primary {
-  color: var(--primary-color) !important;
-}
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
 
-/* Optimize images */
-img { 
-  max-width: 100%; 
-  height: auto; 
-  image-rendering: -webkit-optimize-contrast;
-  /* Optimize decoding */
-  decoding: async;
-}
+    /* Optimize images */
+    img {
+      max-width: 100%;
+      height: auto;
+      image-rendering: -webkit-optimize-contrast;
+      /* Optimize decoding */
+      decoding: async;
+    }
 
-/* Reduce paint areas and optimize rendering */
-* { 
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* Optimize box-sizing */
-  box-sizing: border-box;
-}
+    /* Reduce paint areas and optimize rendering */
+    * {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      /* Optimize box-sizing */
+      box-sizing: border-box;
+    }
 
-/* Loading state */
-.loading { display: none; }
+    /* Loading state */
+    .loading {
+      display: none;
+    }
 
-/* Basic responsive */
-@media (max-width: 768px) {
-  .hero { min-height: 70vh; }
-  .carousel, .carousel-item { height: 70vh; min-height: 400px; }
-  .carousel-caption h2 { font-size: 1.8rem; }
-  .carousel-caption p { font-size: 1rem; }
-  .brand-text { font-size: 0.75rem; }
-  
-  /* Optimize mobile performance */
-  * {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-}
-</style>
+    /* Basic responsive */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 70vh;
+      }
 
-<meta property="og:title" content="العون لنقل العفش وخدمات الأثاث - قطر">
-<meta property="og:description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. خدمات احترافية بأفضل الأسعار.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://alawn-furniture.com">
-<meta property="og:image" content="assets/img/elown.png">
+      .carousel,
+      .carousel-item {
+        height: 70vh;
+        min-height: 400px;
+      }
 
-<meta name="keywords" content="نقل العفش, خدمات الأثاث, تصميم داخلي">
-<meta name="description" content="العون لنقل العفش وخدمات الأثاث">
-<meta name="author" content="العون">
-<title>العون لنقل العفش وخدمات الأثاث - قطر</title>
+      .carousel-caption h2 {
+        font-size: 1.8rem;
+      }
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
+      .carousel-caption p {
+        font-size: 1rem;
+      }
 
-<!-- Critical CSS First -->
-<link rel="preload" href="assets/css/theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/css/rtl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-<link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
-</noscript>
+      .brand-text {
+        font-size: 0.75rem;
+      }
 
-<!-- Bootstrap - Load from CDN with defer -->
-<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></noscript>
+      /* Optimize mobile performance */
+      * {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    }
+  </style>
 
-<!-- Defer Non-Critical CSS -->
-<link rel="preload" href="assets/vendors/font-awesome/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/vendors/slick-carousel/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/fonts/themify-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/vendors/magnific-popup/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/css/hovereffects.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/css/scrolling-nav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <meta property="og:title" content="العون لنقل العفش وخدمات الأثاث - قطر">
+  <meta property="og:description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. خدمات احترافية بأفضل الأسعار.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alawn-furniture.com">
+  <meta property="og:image" content="assets/img/elown.png">
 
-<!-- Fallback for browsers that don't support preload -->
-<noscript>
-<link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
-<link rel="stylesheet" type="text/css" href="assets/vendors/slick-carousel/slick.css">
-<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons.css">
-<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.css">
-<link rel="stylesheet" type="text/css" href="assets/css/hovereffects.css">
-<link rel="stylesheet" type="text/css" href="assets/css/scrolling-nav.css">
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-</noscript>
+  <meta name="keywords" content="نقل العفش, خدمات الأثاث, تصميم داخلي">
+  <meta name="description" content="العون لنقل العفش وخدمات الأثاث">
+  <meta name="author" content="العون">
+  <title>العون لنقل العفش وخدمات الأثاث - قطر</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
+
+  <!-- Critical CSS First -->
+  <link rel="preload" href="assets/css/theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/rtl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
+  </noscript>
+
+  <!-- Bootstrap - Load from CDN with defer -->
+  <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </noscript>
+
+  <!-- Defer Non-Critical CSS -->
+  <link rel="preload" href="assets/vendors/font-awesome/css/fontawesome-all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendors/slick-carousel/slick.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/fonts/themify-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendors/magnific-popup/magnific-popup.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/hovereffects.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/scrolling-nav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick-carousel/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hovereffects.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/scrolling-nav.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  </noscript>
 </head>
 <!-- End Head -->
 
@@ -314,7 +340,7 @@ img {
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1100&h=500&fit=crop&crop=center" alt="نقل العفش" width="1100" height="500" priority="high">
+            <img src="assets/img/portfolio/img1.jpg" alt="نقل العفش" width="1100" height="500" priority="high">
             <div class="container">
               <div class="carousel-caption">
                 <h2>العون لنقل العفش</h2>
@@ -324,7 +350,7 @@ img {
 
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1100&h=500&fit=crop&crop=center" alt="خدمات الأثاث" width="1100" height="500">
+            <img src="assets/img/portfolio/img2.jpg" alt="خدمات الأثاث" width="1100" height="500">
             <div class="container">
               <div class="carousel-caption">
                 <h2>نقل وتركيب الأثاث</h2>
@@ -333,7 +359,7 @@ img {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=1100&h=500&fit=crop&crop=center" alt="التغليف والتخزين" width="1100" height="500">
+            <img src="assets/img/portfolio/img3.jpg" alt="التغليف والتخزين" width="1100" height="500">
             <div class="container">
               <div class="carousel-caption">
                 <h2>تغليف وتخزين آمن</h2>
@@ -349,25 +375,7 @@ img {
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-      <!-- <div class="hero-img bg-overlay" data-overlay="0" style="background-image: url(assets/img/intro/banner-bg.png);"></div> -->
-      <!-- <div class="container mt-md-5 pt-md-3"> -->
-      <!-- <div class="row text-white hero-content"> -->
-      <!-- <div class="col-md-6"> -->
-      <!-- <!-- heading -->
-      <!-- <h1 class="text-uppercase mb-3 display-4 font-weight-bolder" data-aos="fade-right" data-aos-easing="linear"> -->
-      <!-- Change the World -->
-      <!-- </h1>  -->
-      <!-- <p class="lead text-white opacity-2" data-aos="fade-right" data-aos-easing="linear"> -->
-      <!-- Always deliver more than expected -->
-      <!-- </p> -->
-      <!-- <a class="btn btn-lg btn-outline-light py-2 mt-3 px-4 btn-pill" data-aos="fade-right" data-aos-easing="linear" src="#services" -->
-      <!-- href="#services">Our Services</a> -->
-      <!-- </div> -->
-      <!-- <div class="col-md-5"> -->
-      <!-- <img src="assets/img/intro/rocket.svg" width="70%" class="float-right" alt="" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="200"> -->
-      <!-- </div> -->
-      <!-- </div> -->
-      <!-- </div> -->
+
     </section>
 
   </header>
@@ -390,26 +398,60 @@ img {
         <div class="row mb-5">
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="50">
             <div class="d-block mb-4">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=120&h=120&fit=crop&crop=center" alt="خدمات النقل" width="120" height="120">
+              <img loading="lazy" src="assets/img/Picture1.jpg" alt="خدمات النقل" width="120" height="120">
             </div>
-            <h4 class="h5">خدمات النقل</h4>
-            <p>نقل آمن وسريع لجميع أنواع الأثاث والعفش مع فريق محترف ومعدات حديثة لضمان سلامة ممتلكاتكم.</p>
+            <h4 class="h5">خدمات نقل العفش</h4>
+            <p>تعد شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة نقل عفش في قطر – ويمكنكم التأكد من ذلك بسهولة نعمل
+              منذ 2010 في هذه المجال ولدينا فريق مميز في خدمة نقل العفش وعمالة مدربة على نقل اﻷثاث وخصوصاً اﻷثاث الحساس
+              والذي يحتاج إلى عناية خاصة
+              كما نتميز بتقديم ضمانات كافية عند نقل العفش للحفاظ على حقوق عملائنا ومنها توقيع عقد ملزم في حالة حدث أي
+              ضرر لا قدر الله للأثاث أثناء النقل فسيتم تعويضكم بالمبلغ الذي يعادل قيمة الضرر وفي نفس الوقت يرضيكم وهذا
+              ما يميزنا عن غيرنا ولله الحمد
+              وخدمة تغليف ونقل اﻷثاث من بيت لبيت تشمل:
+              فك اﻷثاث وتغليفه جيدا وترقيمه ونقله وإعادة تركيبه نفس ما كأن دون أي خدش يذكر
+              واعطاء ضمان على التركيب يصل إلى 6 أشهر على أعمال التركيب. فقط اتصل الآن .
+
+            </p>
           </div>
 
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="100">
             <div class="d-block mb-4">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=120&h=120&fit=crop&crop=center" alt="تركيب الأثاث" width="120" height="120">
+              <img loading="lazy" src="assets/img/Picture2.jpg" alt="تركيب الأثاث" width="120" height="120">
             </div>
             <h4 class="h5">خدمات تركيب الأثاث</h4>
-            <p>فريق متخصص في تركيب وفك جميع أنواع الأثاث مع الحفاظ على جودة القطع وضمان التركيب السليم.</p>
+            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+              مع ضمان على التركيب يصل إلى 6 أشهر
+              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+              من الخدوش وخلافه .
+              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+
+            </p>
           </div>
 
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="150">
             <div class="d-block mb-4">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=120&h=120&fit=crop&crop=center" alt="خدمات التغليف" width="120" height="120">
+              <img loading="lazy" src="assets/img/Picture3.jpg" alt="خدمات التغليف" width="120" height="120">
             </div>
             <h4 class="h5">خدمات التغليف</h4>
-            <p>تغليف احترافي لجميع أنواع الأثاث والأغراض باستخدام أجود مواد التغليف لحماية قصوى.</p>
+            <p>تعتبر شركة العون لنقل العفش وخدمات الأثاث ® هي أفضل شركة تغليف عفش في قطر وذلك لأننا خبرة في جميع أعمال
+              التغليف من سنة 2010 وإلى وقتنا هذا فقد قمنا بجميع أنواع التغليف
+              * تغليف العفش للتخزين لفترات طويلة بمواد تغليف مميزة ومواد كيماوية آمنة لمكافحة العثة والحشرات وللمحافظة
+              على الأثاث أثناء فترة التخزين لفترة طويلة وأعادته بعد هذه الفترة كما كان خالي من الأضرار و التشققات بفضل
+              الله ثم خبرتنا في أعمال التغليف.
+              * تغليف العفش لأعمال الصيانة نقوم بتغليف العفش بطريقة مميزة لحين الانتهاء من أعمال الصيانة بطريقة احترافية
+              حتى نحافظ على الأثاث من الغبار أو التلف أثناء أعمال الصيانة في المنزل .
+              * تغليف اﻷثاث للمناسبات وعادته بعد الانتهاء من المناسبة
+              وأيضا لدينا تغليف الشحن ولدينا تغليف القطع الثمينة والقيمة والتاريخية واﻷثرية لتخزينها لفترات طويلة
+              كما يوجد لدينا فريق لتغليف وتجهيز اﻷغراض للشحن مثل: تغليف اﻷجهزة والتلفزيونات واﻷغراض القابلة للكسر
+              وتجهيزها للشحن للسفر أو الشحن الجوي أو البحري أو البري مع وزن كل قطعة لمعرفة وزنها.
+            </p>
           </div>
         </div>
 
@@ -417,23 +459,134 @@ img {
         <div class="row mb-5">
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
             <div class="d-block mb-4">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&h=120&fit=crop&crop=center" alt="خدمات التخزين" width="120" height="120">
+              <img loading="lazy" src="assets/img/Picture4.jpg" alt="خدمات التخزين" width="120" height="120">
             </div>
             <h4 class="h5">خدمات التخزين</h4>
-            <p>مخازن آمنة ومكيفة لحفظ أثاثكم لفترات طويلة مع إمكانية الوصول إليها في أي وقت.</p>
+            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+              مع ضمان على التركيب يصل إلى 6 أشهر
+              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+              من الخدوش وخلافه .
+              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+
+            </p>
           </div>
 
-          
+
           <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
             <div class="d-block mb-4">
-              <img loading="lazy" src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=120&h=120&fit=crop&crop=center" alt="خدمات الشحن والسفر" width="120" height="120">
+              <img loading="lazy" src="assets/img/Picture5.jpg" alt="خدمات الصيانة" width="120" height="120">
             </div>
-            <h4 class="h5">خدمات الشحن وتجهيز السفر</h4>
-            <p>خدمات شحن دولية ومحلية مع تجهيز خاص للمسافرين وضمان وصول الأغراض بأمان.</p>
+            <h4 class="h5">خدمات الصيانة</h4>
+            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+              مع ضمان على التركيب يصل إلى 6 أشهر
+              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+              من الخدوش وخلافه .
+              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+
+            </p>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-block mb-4">
+              <img loading="lazy" src="assets/img/Picture6.jpg" alt="خدمات الشحن والتجهيز للسفر" width="120"
+                height="120">
+            </div>
+            <h4 class="h5"></h4>خدمات الشحن والتجهيز للسفر</h4>
+            <p>
+              شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+              مع ضمان على التركيب يصل إلى 6 أشهر
+              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+              من الخدوش وخلافه .
+              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+
+
+            </p>
           </div>
         </div>
 
-       
+        <!-- الصف الثالث - 3 خدمات -->
+
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-block mb-4">
+              <img loading="lazy" src="assets/img/Picture7.jpg" alt="خدمة نقل الملابس والعطور" width="120" height="120">
+            </div>
+            <h4 class="h5">خدمة نقل الملابس والعطور</h4>
+            <p>
+              لدينا طريقه في نقل الملابس تجعلنا أفضل شركة نقل ملابس وعطور في قطر وهي الاهتمام بنقل الملابس والإكسسوارات
+              وخلافه بطريقة تميزنا عن غيرنا.
+              حيث نقوم بوضع الملابس في صناديق خاصة نظيفة وتنقل معلقة نفس ما هى وإعادتها في البيت الجديد داخل الكبت كما
+              كانت نظيف ومعلقة دون تكسر أو غبرة أو حاجة إلى إعادة كي.
+              وأيضا نقدم خدمة نقل الإكسسوارات والعطور في صناديق خاصة ونقلها للبيت الجديد بدون أي تلفيات أثناء النقل.
+              وهذ ما يميز شركتنا العون لنقل العفش وخدمات الأثاث ® كأفضل شركة نقل عفش في قطر
+              ونقدم أيضا خدمات نقل غرفة الملابس كاملة من الملابس وعطور وساعات أحذية وجميع الأكسسوارات إلى غرفة الملابس
+              الجديدة نفس ما هي وبنفس الترتيب والمحافظة على أغراضكم الثمينةكأنكم موجودون بالضبط . فقط اتصل الآن أحصل على
+              الخدمة
+
+            </p>
+          </div>
+
+
+          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-block mb-4">
+              <img loading="lazy" src="assets/img/Picture8.jpg" alt="خدمة توفير الكراتين و مواد التغليف للعميل"
+                width="120" height="120">
+            </div>
+            <h4 class="h5">خدمة توفير الكراتين و مواد التغليف للعميل</h4>
+            <p>
+              شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+              مع ضمان على التركيب يصل إلى 6 أشهر
+              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+              من الخدوش وخلافه .
+              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+            </p>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-block mb-4">
+              <img loading="lazy" src="assets/img/Picture9.jpg" alt="خدمة نقل شاشات التلفاز الكبيرة" width="120"
+                height="120">
+            </div>
+            <h4 class="h5">خدمة نقل شاشات التلفاز الكبيرة</h4>
+            <p>
+              لدينا فريق مختص بنقل التلفزيونات كبيرة الحجم وشاشات العرض بطريقة احترافية وعمل صندوق خاص لكل شاشة للمحافظة
+              عليها أثناء النقل كما أن الشركة مسؤولة عن أي أضرار تحدث أثناء النقل لا قدر الله
+              كما نقوم بالتعليق علي الحائط أو تقديم النصيحة والمقترحات بأفضل مكان لوضع التلفاز إذا رغبتم. كما تميز لفريق
+              خاص لنقل شاشات العرض وأعاده تركيبها وتجمع ويوجد لدينا فريق مختص ونقل غرف ال
+
+
+            </p>
+          </div>
+        </div>
+
 
       </div>
     </section>
@@ -450,7 +603,9 @@ img {
         <div class="row justify-content-between align-items-center" data-aos="fade-right" data-aos-easing="linear"
           data-aos-delay="200">
           <div class="col-md-5">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop&crop=center" width="400" height="300" class="rounded-md" alt="قصة شركة العون">
+            <img loading="lazy"
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop&crop=center"
+              width="400" height="300" class="rounded-md" alt="قصة شركة العون">
           </div>
           <div class="col-md-7">
             <h3 class="mb-4">قصة نجاحنا</h3>
@@ -486,7 +641,9 @@ img {
           </div>
 
           <div class="col-md-5">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center" width="400" height="300" class="rounded-md" alt="مهمتنا وأهدافنا">
+            <img loading="lazy"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center"
+              width="400" height="300" class="rounded-md" alt="مهمتنا وأهدافنا">
           </div>
         </div>
       </div>
@@ -520,8 +677,8 @@ img {
           <div class="col-lg-6 col-md-6 col-12 mb-4">
             <div class="video-container">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                  allowfullscreen title="عملية نقل عفش منزلي كاملة" loading="lazy"></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
+                  title="عملية نقل عفش منزلي كاملة" loading="lazy"></iframe>
               </div>
               <div class="video-caption mt-2">
                 <h6>عملية نقل عفش منزلي كاملة</h6>
@@ -532,8 +689,8 @@ img {
           <div class="col-lg-6 col-md-6 col-12 mb-4">
             <div class="video-container">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4"
-                  allowfullscreen title="تركيب مطبخ حديث" loading="lazy"></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
+                  title="تركيب مطبخ حديث" loading="lazy"></iframe>
               </div>
               <div class="video-caption mt-2">
                 <h6>تركيب مطبخ حديث</h6>
@@ -548,21 +705,19 @@ img {
           <!-- نقل العفش -->
           <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image" 
+              <img class="img-fluid img-responsive lazyload gallery-image"
                 data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center"
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="نقل العفش"
                 data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
-                data-title="نقل العفش المنزلي" 
-                data-description="فريق محترف ومعدات حديثة">
+                data-title="نقل العفش المنزلي" data-description="فريق محترف ومعدات حديثة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>نقل العفش المنزلي</h5>
                   <p>فريق محترف ومعدات حديثة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
-                    data-title="نقل العفش المنزلي" 
-                    data-description="فريق محترف ومعدات حديثة">
+                    data-title="نقل العفش المنزلي" data-description="فريق محترف ومعدات حديثة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -577,16 +732,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="تركيب الأثاث"
                 data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
-                data-title="تركيب الأثاث" 
-                data-description="تركيب احترافي وفك وتجميع">
+                data-title="تركيب الأثاث" data-description="تركيب احترافي وفك وتجميع">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تركيب الأثاث</h5>
                   <p>تركيب احترافي وفك وتجميع</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
-                    data-title="تركيب الأثاث" 
-                    data-description="تركيب احترافي وفك وتجميع">
+                    data-title="تركيب الأثاث" data-description="تركيب احترافي وفك وتجميع">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -602,16 +755,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="التخزين"
                 data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
-                data-title="خدمات التخزين" 
-                data-description="مستودعات آمنة ومكيفة">
+                data-title="خدمات التخزين" data-description="مستودعات آمنة ومكيفة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>خدمات التخزين</h5>
                   <p>مستودعات آمنة ومكيفة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
-                    data-title="خدمات التخزين" 
-                    data-description="مستودعات آمنة ومكيفة">
+                    data-title="خدمات التخزين" data-description="مستودعات آمنة ومكيفة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -626,16 +777,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="تركيب المطابخ"
                 data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
-                data-title="تركيب المطابخ" 
-                data-description="فك وتركيب المطابخ والأجهزة">
+                data-title="تركيب المطابخ" data-description="فك وتركيب المطابخ والأجهزة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تركيب المطابخ</h5>
                   <p>فك وتركيب المطابخ والأجهزة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
-                    data-title="تركيب المطابخ" 
-                    data-description="فك وتركيب المطابخ والأجهزة">
+                    data-title="تركيب المطابخ" data-description="فك وتركيب المطابخ والأجهزة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -650,16 +799,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="الصيانة"
                 data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
-                data-title="خدمات الصيانة" 
-                data-description="صيانة وإصلاح الأثاث">
+                data-title="خدمات الصيانة" data-description="صيانة وإصلاح الأثاث">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>خدمات الصيانة</h5>
                   <p>صيانة وإصلاح الأثاث</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
-                    data-title="خدمات الصيانة" 
-                    data-description="صيانة وإصلاح الأثاث">
+                    data-title="خدمات الصيانة" data-description="صيانة وإصلاح الأثاث">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -674,16 +821,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="الكراتين"
                 data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
-                data-title="توفير الكراتين" 
-                data-description="كراتين عالية الجودة">
+                data-title="توفير الكراتين" data-description="كراتين عالية الجودة">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>توفير الكراتين</h5>
                   <p>كراتين عالية الجودة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
-                    data-title="توفير الكراتين" 
-                    data-description="كراتين عالية الجودة">
+                    data-title="توفير الكراتين" data-description="كراتين عالية الجودة">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -698,16 +843,14 @@ img {
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
                 alt="تحميل الشاحنات"
                 data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
-                data-title="تحميل الشاحنات" 
-                data-description="تحميل وتفريغ احترافي">
+                data-title="تحميل الشاحنات" data-description="تحميل وتفريغ احترافي">
               <div class="overlay">
                 <div class="overlay-content">
                   <h5>تحميل الشاحنات</h5>
                   <p>تحميل وتفريغ احترافي</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn" 
+                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
                     data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
-                    data-title="تحميل الشاحنات" 
-                    data-description="تحميل وتفريغ احترافي">
+                    data-title="تحميل الشاحنات" data-description="تحميل وتفريغ احترافي">
                     <i class="fas fa-eye"></i> عرض الصورة
                   </a>
                 </div>
@@ -715,11 +858,11 @@ img {
             </div>
           </div>
         </div>
-            
-          </div>
-        
 
-        </div>
+      </div>
+
+
+      </div>
 
       </div>
       </div>
@@ -815,7 +958,7 @@ img {
             </article>
           </div>
 
-         
+
 
           <!-- المقال الرابع -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -947,7 +1090,8 @@ img {
                 </ul>
               </div>
               <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop&crop=center" class="img-fluid rounded" alt="التحضير قبل النقل">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop&crop=center"
+                  class="img-fluid rounded" alt="التحضير قبل النقل">
               </div>
             </div>
           </div>
@@ -956,7 +1100,8 @@ img {
           <div id="tip-2" class="tip-section mb-5">
             <div class="row align-items-center">
               <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop&crop=center" class="img-fluid rounded" alt="تغليف الأثاث">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop&crop=center"
+                  class="img-fluid rounded" alt="تغليف الأثاث">
               </div>
               <div class="col-md-8">
                 <h4>2. تغليف الأثاث بشكل صحيح</h4>
@@ -987,7 +1132,8 @@ img {
                 </ul>
               </div>
               <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=200&fit=crop&crop=center" class="img-fluid rounded" alt="حماية الأجهزة الإلكترونية">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=200&fit=crop&crop=center"
+                  class="img-fluid rounded" alt="حماية الأجهزة الإلكترونية">
               </div>
             </div>
           </div>
@@ -996,7 +1142,8 @@ img {
           <div id="tip-4" class="tip-section mb-5">
             <div class="row align-items-center">
               <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=200&fit=crop&crop=center" class="img-fluid rounded" alt="نقل الأثاث الثقيل">
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=200&fit=crop&crop=center"
+                  class="img-fluid rounded" alt="نقل الأثاث الثقيل">
               </div>
               <div class="col-md-8">
                 <h4>4. نقل الأثاث الثقيل</h4>
@@ -1241,139 +1388,139 @@ img {
   <!-- Essential JS Only -->
   <script src="assets/vendors/jquery.min.js"></script>
   <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-  
+
   <!-- Add jQuery Easing inline to fix scrolling-nav.js -->
   <script>
-  // Simple jQuery easing functions to replace missing easing library
-  $.extend($.easing, {
-    easeInOutExpo: function (x, t, b, c, d) {
-      if (t == 0) return b;
-      if (t == d) return b + c;
-      if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-      return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-    },
-    swing: function (x, t, b, c, d) {
-      return -c * (t /= d) * (t - 2) + b;
-    },
-    linear: function (x, t, b, c, d) {
-      return c * t / d + b;
-    }
-  });
+    // Simple jQuery easing functions to replace missing easing library
+    $.extend($.easing, {
+      easeInOutExpo: function (x, t, b, c, d) {
+        if (t == 0) return b;
+        if (t == d) return b + c;
+        if ((t /= d / 2) < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+        return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+      },
+      swing: function (x, t, b, c, d) {
+        return -c * (t /= d) * (t - 2) + b;
+      },
+      linear: function (x, t, b, c, d) {
+        return c * t / d + b;
+      }
+    });
   </script>
-  
+
   <script defer src="assets/js/scrolling-nav.js"></script>
-  
+
   <!-- Load on demand - only when needed -->
   <script>
-  // Advanced Lazy Loading with Intersection Observer
-  function setupLazyLoading() {
-    if (!('IntersectionObserver' in window)) return; // Fallback for old browsers
-    
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
+    // Advanced Lazy Loading with Intersection Observer
+    function setupLazyLoading() {
+      if (!('IntersectionObserver' in window)) return; // Fallback for old browsers
+
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+              img.removeAttribute('data-src');
+            }
+            observer.unobserve(img);
           }
-          observer.unobserve(img);
-        }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
       });
-    }, {
-      rootMargin: '50px 0px',
-      threshold: 0.01
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
-  }
-  
-  // Efficient script loading with caching
-  const loadedScripts = new Set();
-  function loadScript(src, callback) {
-    if (loadedScripts.has(src)) {
-      callback && callback();
-      return;
+
+      images.forEach(img => imageObserver.observe(img));
     }
-    
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = function() {
-      loadedScripts.add(src);
-      callback && callback();
-    };
-    script.onerror = function() {
-      console.warn('Failed to load script:', src);
-    };
-    
-    // Use requestIdleCallback for non-critical scripts
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => document.head.appendChild(script));
-    } else {
-      setTimeout(() => document.head.appendChild(script), 0);
+
+    // Efficient script loading with caching
+    const loadedScripts = new Set();
+    function loadScript(src, callback) {
+      if (loadedScripts.has(src)) {
+        callback && callback();
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = function () {
+        loadedScripts.add(src);
+        callback && callback();
+      };
+      script.onerror = function () {
+        console.warn('Failed to load script:', src);
+      };
+
+      // Use requestIdleCallback for non-critical scripts
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => document.head.appendChild(script));
+      } else {
+        setTimeout(() => document.head.appendChild(script), 0);
+      }
     }
-  }
-  
-  // Optimized AOS loading
-  let aosLoaded = false;
-  function maybeLoadAOS() {
-    if (!aosLoaded) {
-      aosLoaded = true;
-      loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js', function() {
-        if (typeof AOS !== 'undefined') {
-          AOS.init({ 
-            duration: 600, 
-            once: true, 
-            offset: 100,
-            disable: window.innerWidth < 768 // Disable on mobile for performance
-          });
-        }
+
+    // Optimized AOS loading
+    let aosLoaded = false;
+    function maybeLoadAOS() {
+      if (!aosLoaded) {
+        aosLoaded = true;
+        loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js', function () {
+          if (typeof AOS !== 'undefined') {
+            AOS.init({
+              duration: 600,
+              once: true,
+              offset: 100,
+              disable: window.innerWidth < 768 // Disable on mobile for performance
+            });
+          }
+        });
+      }
+    }
+
+    // Conditional loading based on viewport
+    function maybeLoadSlick() {
+      const portfolioSection = document.querySelector('.portfolio-section, .slick-needed');
+      if (portfolioSection && !loadedScripts.has('assets/vendors/slick-carousel/slick.min.js')) {
+        loadScript('assets/vendors/slick-carousel/slick.min.js');
+      }
+    }
+
+    // Throttled scroll handler
+    let scrollTimeout;
+    function throttledScrollHandler() {
+      if (scrollTimeout) return;
+
+      scrollTimeout = requestAnimationFrame(() => {
+        maybeLoadSlick();
+        scrollTimeout = null;
       });
     }
-  }
-  
-  // Conditional loading based on viewport
-  function maybeLoadSlick() {
-    const portfolioSection = document.querySelector('.portfolio-section, .slick-needed');
-    if (portfolioSection && !loadedScripts.has('assets/vendors/slick-carousel/slick.min.js')) {
-      loadScript('assets/vendors/slick-carousel/slick.min.js');
+
+    // Initialize everything efficiently
+    function initialize() {
+      // Setup lazy loading first
+      setupLazyLoading();
+
+      // Use passive listeners for performance
+      window.addEventListener('scroll', throttledScrollHandler, { passive: true });
+
+      // Load AOS after initial paint
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(maybeLoadAOS, { timeout: 2000 });
+      } else {
+        setTimeout(maybeLoadAOS, 800);
+      }
     }
-  }
-  
-  // Throttled scroll handler
-  let scrollTimeout;
-  function throttledScrollHandler() {
-    if (scrollTimeout) return;
-    
-    scrollTimeout = requestAnimationFrame(() => {
-      maybeLoadSlick();
-      scrollTimeout = null;
-    });
-  }
-  
-  // Initialize everything efficiently
-  function initialize() {
-    // Setup lazy loading first
-    setupLazyLoading();
-    
-    // Use passive listeners for performance
-    window.addEventListener('scroll', throttledScrollHandler, { passive: true });
-    
-    // Load AOS after initial paint
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(maybeLoadAOS, { timeout: 2000 });
+
+    // Use the most efficient DOM ready approach
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initialize);
     } else {
-      setTimeout(maybeLoadAOS, 800);
+      initialize();
     }
-  }
-  
-  // Use the most efficient DOM ready approach
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initialize);
-  } else {
-    initialize();
-  }
   </script>
 
   <!-- AOS Animation Library مع تحسينات للأجهزة المحمولة -->
@@ -1384,12 +1531,12 @@ img {
       const navbarToggler = document.querySelector('.navbar-toggler');
       const tiMenuIcon = navbarToggler.querySelector('.ti-menu');
       const fallbackIcon = navbarToggler.querySelector('.fas.fa-bars');
-      
+
       // إذا لم تظهر أيقونة ti-menu بشكل صحيح، استخدم الاحتياطية
       setTimeout(() => {
         const computedStyle = window.getComputedStyle(tiMenuIcon, '::before');
         const content = computedStyle.getPropertyValue('content');
-        
+
         // إذا لم تكن الأيقونة تعمل، أظهر الاحتياطية
         if (!content || content === 'none' || content === '""') {
           tiMenuIcon.style.display = 'none';
@@ -1617,30 +1764,30 @@ img {
 
     // تحسين تجربة المستخدم - التمرير السلس للأقسام
     document.addEventListener('DOMContentLoaded', function () {
-    
+
       const navLinks = document.querySelectorAll('.js-scroll-trigger[href^="#"]');
-      
+
       navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
           // السماح لـ jQuery بالعمل أولاً إذا كان موجوداً
           if (typeof jQuery !== 'undefined') {
             return; // ترك jQuery يتولى الأمر
           }
-          
+
           e.preventDefault();
-          
+
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
-          
+
           if (targetElement) {
             // حساب ارتفاع شريط التنقل
             const navbar = document.querySelector('#mainNav');
             const navbarHeight = navbar ? navbar.offsetHeight : 50;
             const offset = navbarHeight + 20;
-            
+
             // التمرير السريع
             const targetPosition = targetElement.offsetTop - offset;
-            
+
             // استخدام requestAnimationFrame للحصول على أداء أفضل
             requestAnimationFrame(() => {
               window.scrollTo({
@@ -1648,7 +1795,7 @@ img {
                 behavior: 'smooth'
               });
             });
-            
+
             // إغلاق القائمة المنسدلة إذا كانت مفتوحة (للأجهزة المحمولة)
             const navbarToggler = document.querySelector('.navbar-collapse');
             if (navbarToggler && navbarToggler.classList.contains('show')) {
@@ -1663,8 +1810,8 @@ img {
         });
       });
 
-  
-      
+
+
     });
 
     // Lazy loading implementation for portfolio images
@@ -1704,7 +1851,7 @@ img {
     function initGallery() {
       const galleryBtns = document.querySelectorAll('.gallery-btn');
       const galleryImgs = document.querySelectorAll('.gallery-image');
-      
+
       // Collect images from buttons (more reliable data source)
       galleryImages = Array.from(galleryBtns).map(btn => ({
         img: btn.dataset.img,
@@ -1714,7 +1861,7 @@ img {
 
       // Add click events to buttons
       galleryBtns.forEach((btn, index) => {
-        btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function (e) {
           e.preventDefault();
           currentImageIndex = index;
           openLightbox();
@@ -1723,7 +1870,7 @@ img {
 
       // Add click events to images
       galleryImgs.forEach((img, index) => {
-        img.addEventListener('click', function(e) {
+        img.addEventListener('click', function (e) {
           e.preventDefault();
           e.stopPropagation();
           currentImageIndex = index;
@@ -1739,11 +1886,11 @@ img {
       const lightboxDescription = document.getElementById('lightbox-description');
 
       const currentImage = galleryImages[currentImageIndex];
-      
+
       lightboxImg.src = currentImage.img;
       lightboxTitle.textContent = currentImage.title;
       lightboxDescription.textContent = currentImage.description;
-      
+
       lightbox.style.display = 'block';
       document.body.style.overflow = 'hidden'; // منع التمرير
     }
@@ -1770,21 +1917,21 @@ img {
       const lightboxDescription = document.getElementById('lightbox-description');
 
       const currentImage = galleryImages[currentImageIndex];
-      
+
       lightboxImg.src = currentImage.img;
       lightboxTitle.textContent = currentImage.title;
       lightboxDescription.textContent = currentImage.description;
     }
 
     // Event listeners for lightbox
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       initGallery();
       initPortfolioFilter();
       initNavbarActiveState();
 
       // Close lightbox events
       document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
-      document.getElementById('lightbox').addEventListener('click', function(e) {
+      document.getElementById('lightbox').addEventListener('click', function (e) {
         if (e.target === this) {
           closeLightbox();
         }
@@ -1795,10 +1942,10 @@ img {
       document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
 
       // Keyboard navigation
-      document.addEventListener('keydown', function(e) {
+      document.addEventListener('keydown', function (e) {
         const lightbox = document.getElementById('lightbox');
         if (lightbox.style.display === 'block') {
-          switch(e.key) {
+          switch (e.key) {
             case 'Escape':
               closeLightbox();
               break;
@@ -1819,19 +1966,19 @@ img {
       const portfolioItems = document.querySelectorAll('.portfolio-item .item');
 
       filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
           const filter = this.getAttribute('data-filter');
-          
+
           // Remove active class from all buttons
           filterBtns.forEach(b => b.classList.remove('active'));
           // Add active class to clicked button
           this.classList.add('active');
-          
+
           // Filter items with smooth animation
           portfolioItems.forEach(item => {
             // Remove any existing classes
             item.classList.remove('hidden', 'visible');
-            
+
             if (filter === '*') {
               // Show all items
               item.classList.add('visible');
@@ -1861,27 +2008,27 @@ img {
     function initNavbarActiveState() {
       const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
       const sections = document.querySelectorAll('section[id]');
-      
+
       // Function to update active link based on scroll position
       function updateActiveNavLink() {
         let current = '';
         const scrollY = window.pageYOffset;
         const navbarHeight = document.querySelector('#mainNav')?.offsetHeight || 70;
-        
+
         sections.forEach(section => {
           const sectionTop = section.offsetTop - navbarHeight - 50;
           const sectionHeight = section.offsetHeight;
-          
+
           if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
           }
         });
-        
+
         // Special case for top of page
         if (scrollY < 100) {
           current = 'top';
         }
-        
+
         // Update active class
         navLinks.forEach(link => {
           link.classList.remove('active');
@@ -1891,28 +2038,28 @@ img {
           }
         });
       }
-      
+
       // Debounce scroll function for better performance
       let scrollTimeout;
       function debouncedScroll() {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(updateActiveNavLink, 10);
       }
-      
+
       // Update on scroll
       window.addEventListener('scroll', debouncedScroll);
-      
+
       // Update on page load
       setTimeout(updateActiveNavLink, 100);
-      
+
       // Add click event to navbar links for immediate active state
       navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
           // Remove active from all links
           navLinks.forEach(l => l.classList.remove('active'));
           // Add active to clicked link
           this.classList.add('active');
-          
+
           // Update after smooth scroll completes
           setTimeout(updateActiveNavLink, 800);
         });
