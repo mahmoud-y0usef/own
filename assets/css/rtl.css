@@ -10,7 +10,9 @@
 .btn {
   color: white !important;
 }
-/* استبدال اللون الأزرق بالبني */
+ .navbar .navbar-nav .nav-item .nav-link.select{
+  color: #006bdf !important;
+ }
 .text-primary {
   color: var(--primary-color) !important;
 }
@@ -1567,16 +1569,21 @@ a:hover {
 .floating-buttons {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.floating-buttons a {
+  pointer-events: auto;
 }
 
 [dir="rtl"] .floating-buttons {
-  right: auto;
-  left: 20px;
+  direction: rtl;
 }
 
 .floating-btn {
@@ -1650,14 +1657,7 @@ a:hover {
 /* تحسينات للأجهزة المحمولة */
 @media (max-width: 768px) {
   .floating-buttons {
-    bottom: 15px;
-    right: 15px;
-    gap: 12px;
-  }
-
-  [dir="rtl"] .floating-buttons {
-    right: auto;
-    left: 15px;
+    padding: 0 15px;
   }
 
   .floating-btn {
@@ -1669,14 +1669,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .floating-buttons {
-    bottom: 10px;
-    right: 10px;
-    gap: 10px;
-  }
-
-  [dir="rtl"] .floating-buttons {
-    right: auto;
-    left: 10px;
+    padding: 0 10px;
   }
 
   .floating-btn {
@@ -1717,13 +1710,7 @@ a:hover {
 /* تحسينات للأجهزة المحمولة */
 @media (max-width: 768px) {
   .floating-buttons {
-    bottom: 15px;
-    right: 15px;
-  }
-
-  [dir="rtl"] .floating-buttons {
-    right: auto;
-    left: 15px;
+    padding: 0 15px;
   }
 
   .floating-btn {
@@ -2930,6 +2917,19 @@ html {
 /* تحسين أداء الـ CSS */
 * {
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* تحسين حالة التحميل */
@@ -3122,4 +3122,118 @@ html {
   .overlay-content p {
     font-size: 0.8rem;
   }
+}
+
+/* أيقونات التواصل عند المرور على بطاقات الخدمات */
+#services .text-center {
+    position: relative;
+    overflow: hidden;
+}
+
+#services .text-center h4 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+#services .text-center p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+}
+
+#services .d-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-contact-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+#services .d-block:hover .service-contact-icons {
+    height: 80px;
+    padding: 15px 20px;
+    opacity: 1;
+}
+
+.service-contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #8B4513;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    transform: translateY(80px);
+}
+
+#services .d-block:hover .service-contact-icon {
+    transform: translateY(0);
+}
+
+.service-contact-icon.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+    transition-delay: 0.1s;
+}
+
+.service-contact-icon.phone {
+    background: #ffffff;
+    color: #8B4513;
+    transition-delay: 0.15s;
+}
+
+.service-contact-icon:hover {
+    transform: translateY(0) scale(1.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.service-contact-icon.whatsapp:hover {
+    background: #128C7E;
+}
+
+.service-contact-icon.phone:hover {
+    background: #8B4513;
+    color: #ffffff;
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .service-contact-icons {
+        height: 0 !important;
+    }
+    
+    #services .d-block:hover .service-contact-icons {
+        height: 70px;
+        padding: 12px 15px;
+    }
+    
+    .service-contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
 }

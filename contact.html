@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="theme-color" content="#05339C">
+    <title>تواصل معنا - العون لنقل العفش وخدمات الأثاث</title>
+    <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="brand-container">
+                        <img src="assets/img/elown.png" alt="العون" class="brand-logo">
+                        <div class="brand-text">العون لنقل العفش وخدمات الأثاث</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <i class="fas fa-bars" style="color: var(--primary-color);"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الصفحة الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا المتميزة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">المعرض</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tips.html">نصائح هامة</a></li>
+                        <li class="nav-item active"><a class="nav-link select" href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="mt-lg-5 m-0">
+        <section class="wt-section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+                    <div class="col-md-8 text-center w-md-50 mx-auto mb-0">
+                        <h2 class="mb-md-2">تواصل معنا</h2>
+                        <p class="lead text-brown"> نصيحة: التواصل عبر الواتساب أسرع وأسهل!</p>
+                        <p>نحن هنا لخدمتكم على مدار الساعة</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h4>طلب عرض سعر فوري</h4>
+                                <p class="mb-0">احصل على عرض سعر مخصص لاحتياجاتك</p>
+                            </div>
+                            <div class="card-body">
+                                <form id="priceQuoteForm" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">الاسم الكريم <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="customerName" required
+                                                minlength="2" maxlength="50">
+                                            <div class="invalid-feedback">
+                                                يرجى إدخال الاسم (حد أدنى حرفين)
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">رقم الهاتف <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="tel" class="form-control" id="customerPhone" required
+                                                pattern="[0-9]{9,15}" placeholder="5xxxxxxxx">
+                                            <div class="invalid-feedback">
+                                                يرجى إدخال رقم هاتف صحيح (9-15 رقم)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">المدينة الحالية <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="currentCity" required
+                                                minlength="2" maxlength="30">
+                                            <div class="invalid-feedback">
+                                                يرجى إدخال اسم المدينة الحالية
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">المدينة المراد النقل إليها <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="destinationCity" required
+                                                minlength="2" maxlength="30">
+                                            <div class="invalid-feedback">
+                                                يرجى إدخال اسم المدينة المراد النقل إليها
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">نوع الخدمة المطلوبة <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-control" id="serviceType" required>
+                                            <option value="">اختر نوع الخدمة</option>
+                                            <option value="نقل عفش منزلي">نقل عفش منزلي</option>
+                                            <option value="نقل أثاث مكتبي">نقل أثاث مكتبي</option>
+                                            <option value="نقل أثاث حساس">نقل أثاث حساس</option>
+                                            <option value="تغليف وتخزين">تغليف وتخزين</option>
+                                            <option value="خدمة متكاملة">خدمة متكاملة</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            يرجى اختيار نوع الخدمة المطلوبة
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">تفاصيل الأغراض المراد نقلها</label>
+                                        <textarea class="form-control" id="itemsDetails" rows="4" maxlength="500"
+                                            placeholder="مثال: غرفة نوم كاملة، صالة مع طاولة تلفاز، مطبخ، أجهزة كهربائية..."></textarea>
+                                        <small class="form-text text-muted">اختياري - حد أقصى 500 حرف</small>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">التاريخ المفضل للنقل</label>
+                                            <input type="date" class="form-control" id="preferredDate">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">الوقت المفضل</label>
+                                            <select class="form-control" id="preferredTime">
+                                                <option value="">اختر الوقت</option>
+                                                <option value="صباحاً (8-12)">صباحاً (8-12)</option>
+                                                <option value="ظهراً (12-4)">ظهراً (12-4)</option>
+                                                <option value="مساءً (4-8)">مساءً (4-8)</option>
+                                                <option value="مرن">مرن</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-success btn-lg" id="submitBtn">
+                                            <i class="fab fa-whatsapp"></i> إرسال الطلب عبر الواتساب
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="contact-info">
+                            <div class="bg-success text-white p-4 d-flex align-items-center mb-4 border rounded-md">
+                                <i class="fab fa-whatsapp fa-3x ml-4"></i>
+                                <div>
+                                    <h5 class="mb-2 text-white">واتساب - الأسرع!</h5>
+                                    <p class="mb-1">51408899</p>
+                                    <small>متاح 24/7 للرد السريع</small>
+                                </div>
+                            </div>
+                            <div class="bg-primary text-white p-4 d-flex align-items-center mb-4 border rounded-md">
+                                <i class="fas fa-phone fa-3x ml-4"></i>
+                                <div>
+                                    <h5 class="mb-2 text-white">اتصل بنا</h5>
+                                    <p class="mb-1">51408899</p>
+                                    <small>خدمة عملاء متميزة</small>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
+                                <i class="fa fa-map-marker-alt fa-3x text-brown ml-4"></i>
+                                <div>
+                                    <h5 class="mb-2">موقعنا</h5>
+                                    <p class="mb-0">38 شارع الشاهين الريان</p>
+                                    <small class="text-muted">الدوحة - قطر</small>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
+                                <i class="fas fa-envelope fa-3x text-brown ml-4"></i>
+                                <div>
+                                    <h5 class="mb-2">البريد الإلكتروني</h5>
+                                    <p class="mb-0">ahmadalshazly1@gmail.com</p>
+                                    <small class="text-muted">للاستفسارات الرسمية</small>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
+                                <i class="fas fa-clock fa-3x text-brown ml-4"></i>
+                                <div>
+                                    <h5 class="mb-2">ساعات العمل</h5>
+                                    <p class="mb-1">السبت - الخميس: 7 ص - 10 م</p>
+                                    <p class="mb-0">الجمعة: 2 م - 10 م</p>
+                                    <small class="text-muted">خدمة الطوارئ متاحة 24/7</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h4 class="text-center mb-4">خريطة خدماتنا</h4>
+                        <div class="text-center">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.553267374555!2d51.43298531501596!3d25.29206978389165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x44d2061f8d2d5d6e!2sAl%20Rayyan%2C%20Qatar!5e0!3m2!1sen!2sus!4v1699364044856!5m2!1sen!2sus"
+                                width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="floating-buttons">
+        <a href="tel:+97451408899" class="floating-btn call-btn" title="اتصل بنا الآن">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/97451408899" target="_blank" class="floating-btn whatsapp-btn"
+            title="راسلنا على الواتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
+                    <small class="text-white">العون لنقل العفش وخدمات الأثاث &copy; جميع الحقوق محفوظة</small>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <ul class="list-inline text-center text-md-right mb-0">
+                        <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <a class="text-white" target="_blank" href="https://www.facebook.com">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
+                            <a class="text-white" target="_blank" href="https://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+
+        document.getElementById('priceQuoteForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                const name = document.getElementById('customerName').value;
+                const phone = document.getElementById('customerPhone').value;
+                const currentCity = document.getElementById('currentCity').value;
+                const destCity = document.getElementById('destinationCity').value;
+                const serviceType = document.getElementById('serviceType').value;
+                const items = document.getElementById('itemsDetails').value;
+                const date = document.getElementById('preferredDate').value;
+                const time = document.getElementById('preferredTime').value;
+
+                let message = `السلام عليكم، أريد طلب عرض سعر:\n\n`;
+                message += `الاسم: ${name}\n`;
+                message += `رقم الهاتف: ${phone}\n`;
+                message += `من: ${currentCity}\n`;
+                message += `إلى: ${destCity}\n`;
+                message += `نوع الخدمة: ${serviceType}\n`;
+                if (items) message += `التفاصيل: ${items}\n`;
+                if (date) message += `التاريخ المفضل: ${date}\n`;
+                if (time) message += `الوقت المفضل: ${time}\n`;
+
+                const whatsappUrl = `https://wa.me/97470700782?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            } else {
+                this.classList.add('was-validated');
+            }
+        });
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+        document.addEventListener('selectstart', e => e.preventDefault());
+        document.addEventListener('copy', e => e.preventDefault());
+    </script>
+</body>
+
+</html>

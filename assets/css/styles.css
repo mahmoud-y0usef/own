@@ -14,7 +14,9 @@ h1, h2{
 	font-family: 'Rubik', sans-serif;
 	font-family: 'Coda Caption', sans-serif;
 }
- 
+ .navbar .navbar-nav .nav-item .nav-link.select{
+  color: #006bdf !important;
+ }
 .navbar-dark .navbar-brand {
     color: #303030 !important;
     font-family: 'Coda Caption', sans-serif;
@@ -30,6 +32,23 @@ h1, h2{
 	color: #242121 !important;
 	border-color: #f1ad50 !important;
 	background: #f1ad50;
+}
+.btn-brown {
+	color: #fff !important;
+	background-color: #8B4513;
+	border-color: #8B4513;
+	border-radius: 25px;
+	padding: 10px 30px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 5px rgba(139, 69, 19, 0.3);
+}
+.btn-brown:hover {
+	background-color: #654321;
+	border-color: #654321;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(139, 69, 19, 0.4);
+	color: #fff !important;
 }
 .text-primary{
 	color:#e68b0de8 !important

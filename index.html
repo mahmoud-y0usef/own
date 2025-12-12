@@ -8,24 +8,16 @@
   <meta name="theme-color" content="#05339C">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-  <!-- Preload Critical Resources -->
   <link rel="preload" href="assets/css/rtl.css" as="style">
   <link rel="preload" href="assets/css/theme.css" as="style">
   <link rel="preload" href="assets/fonts/fonts/themify.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/img/elown.png" as="image">
-
-  <!-- DNS Prefetch for External Resources -->
   <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
   <link rel="dns-prefetch" href="//unpkg.com">
   <link rel="dns-prefetch" href="//images.unsplash.com">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-
-  <!-- Preconnect for Critical External Resources -->
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin>
-
-  <!-- Critical CSS - Load First -->
   <style>
     /* Critical CSS for Above-the-fold Content */
     :root {
@@ -227,37 +219,27 @@
       }
     }
   </style>
-
   <meta property="og:title" content="العون لنقل العفش وخدمات الأثاث - قطر">
   <meta property="og:description" content="شركة العون لنقل العفش وخدمات الأثاث في قطر. خدمات احترافية بأفضل الأسعار.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alawn-furniture.com">
   <meta property="og:image" content="assets/img/elown.png">
-
   <meta name="keywords" content="نقل العفش, خدمات الأثاث, تصميم داخلي">
   <meta name="description" content="العون لنقل العفش وخدمات الأثاث">
   <meta name="author" content="العون">
   <title>العون لنقل العفش وخدمات الأثاث - قطر</title>
-
-  <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/elown.png" type="image/x-icon">
-
-  <!-- Critical CSS First -->
   <link rel="preload" href="assets/css/theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="assets/css/rtl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
   </noscript>
-
-  <!-- Bootstrap - Load from CDN with defer -->
   <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </noscript>
-
-  <!-- Defer Non-Critical CSS -->
   <link rel="preload" href="assets/vendors/font-awesome/css/fontawesome-all.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="assets/vendors/slick-carousel/slick.css" as="style"
@@ -270,8 +252,6 @@
   <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/slick-carousel/slick.css">
@@ -283,12 +263,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   </noscript>
 </head>
-<!-- End Head -->
 
 <body>
-  <!-- Header -->
   <header id="top">
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger d-flex align-items-center" href="#top">
@@ -300,37 +277,35 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="ti-menu"></span>
-          <!-- أيقونة احتياطية باستخدام Font Awesome -->
           <i class="fas fa-bars" style="display: none; color: var(--primary-color); font-size: 1.25rem;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#top">الصفحة الرئيسية</a>
+            <li class="nav-item ">
+              <a class="nav-link select" href="index.html">الصفحة الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">خدماتنا المتميزة</a>
+              <a class="nav-link" href="services.html">خدماتنا المتميزة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">من نحن</a>
+              <a class="nav-link" href="about.html">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">المعرض</a>
+              <a class="nav-link" href="portfolio.html">المعرض</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">المدونة</a>
+              <a class="nav-link" href="blog.html">المدونة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tips">نصائح هامة</a>
+              <a class="nav-link" href="tips.html">نصائح هامة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">تواصل معنا</a>
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
     <section class="hero-large hero" id="top">
       <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
@@ -347,7 +322,6 @@
                 <p>خدمة آمنة وموثوقة</p>
               </div>
             </div>
-
           </div>
           <div class="carousel-item">
             <img src="assets/img/portfolio/img2.jpg" alt="خدمات الأثاث" width="1100" height="500">
@@ -375,14 +349,9 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-
     </section>
-
   </header>
-  <!-- End Header -->
-
   <main role="main" class="mt-lg-5 m-0">
-
     <section class="wt-section" id="services">
       <div class="container">
         <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
@@ -393,204 +362,275 @@
             </p>
           </div>
         </div>
-
-        <!-- الصف الأول - 3 خدمات -->
         <div class="row mb-5">
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="50">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture1.jpg" alt="خدمات النقل" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="50">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture1.jpg" alt="خدمات النقل" width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمات نقل العفش</h4>
+              <p>تعد شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة نقل عفش في قطر – ويمكنكم التأكد من ذلك بسهولة
+                نعمل
+                منذ 2010 في هذه المجال ولدينا فريق مميز في خدمة نقل العفش وعمالة مدربة على نقل اﻷثاث وخصوصاً اﻷثاث
+                الحساس
+                والذي يحتاج إلى عناية خاصة
+                كما نتميز بتقديم ضمانات كافية عند نقل العفش للحفاظ على حقوق عملائنا ومنها توقيع عقد ملزم في حالة حدث أي
+                ضرر لا قدر الله للأثاث أثناء النقل فسيتم تعويضكم بالمبلغ الذي يعادل قيمة الضرر وفي نفس الوقت يرضيكم وهذا
+                ما يميزنا عن غيرنا ولله الحمد
+                وخدمة تغليف ونقل اﻷثاث من بيت لبيت تشمل:
+                فك اﻷثاث وتغليفه جيدا وترقيمه ونقله وإعادة تركيبه نفس ما كأن دون أي خدش يذكر
+                واعطاء ضمان على التركيب يصل إلى 6 أشهر على أعمال التركيب. فقط اتصل الآن .
+              </p>
             </div>
-            <h4 class="h5">خدمات نقل العفش</h4>
-            <p>تعد شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة نقل عفش في قطر – ويمكنكم التأكد من ذلك بسهولة نعمل
-              منذ 2010 في هذه المجال ولدينا فريق مميز في خدمة نقل العفش وعمالة مدربة على نقل اﻷثاث وخصوصاً اﻷثاث الحساس
-              والذي يحتاج إلى عناية خاصة
-              كما نتميز بتقديم ضمانات كافية عند نقل العفش للحفاظ على حقوق عملائنا ومنها توقيع عقد ملزم في حالة حدث أي
-              ضرر لا قدر الله للأثاث أثناء النقل فسيتم تعويضكم بالمبلغ الذي يعادل قيمة الضرر وفي نفس الوقت يرضيكم وهذا
-              ما يميزنا عن غيرنا ولله الحمد
-              وخدمة تغليف ونقل اﻷثاث من بيت لبيت تشمل:
-              فك اﻷثاث وتغليفه جيدا وترقيمه ونقله وإعادة تركيبه نفس ما كأن دون أي خدش يذكر
-              واعطاء ضمان على التركيب يصل إلى 6 أشهر على أعمال التركيب. فقط اتصل الآن .
-
-            </p>
           </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture2.jpg" alt="تركيب الأثاث" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture2.jpg" alt="تركيب الأثاث" width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمات تركيب الأثاث</h4>
+              <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+                وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+                لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+                تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+                فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+                ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+                وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+                لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+                مع ضمان على التركيب يصل إلى 6 أشهر
+                وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+                من الخدوش وخلافه .
+                ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+              </p>
             </div>
-            <h4 class="h5">خدمات تركيب الأثاث</h4>
-            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
-              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
-              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
-              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
-              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
-              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
-              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
-              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
-              مع ضمان على التركيب يصل إلى 6 أشهر
-              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
-              من الخدوش وخلافه .
-              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
-
-            </p>
           </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="150">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture3.jpg" alt="خدمات التغليف" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture3.jpg" alt="خدمات التغليف" width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمات التغليف</h4>
+              <p>تعتبر شركة العون لنقل العفش وخدمات الأثاث ® هي أفضل شركة تغليف عفش في قطر وذلك لأننا خبرة في جميع أعمال
+                التغليف من سنة 2010 وإلى وقتنا هذا فقد قمنا بجميع أنواع التغليف
+                * تغليف العفش للتخزين لفترات طويلة بمواد تغليف مميزة ومواد كيماوية آمنة لمكافحة العثة والحشرات وللمحافظة
+                على الأثاث أثناء فترة التخزين لفترة طويلة وأعادته بعد هذه الفترة كما كان خالي من الأضرار و التشققات بفضل
+                الله ثم خبرتنا في أعمال التغليف.
+                * تغليف العفش لأعمال الصيانة نقوم بتغليف العفش بطريقة مميزة لحين الانتهاء من أعمال الصيانة بطريقة
+                احترافية
+                حتى نحافظ على الأثاث من الغبار أو التلف أثناء أعمال الصيانة في المنزل .
+                * تغليف اﻷثاث للمناسبات وعادته بعد الانتهاء من المناسبة
+                وأيضا لدينا تغليف الشحن ولدينا تغليف القطع الثمينة والقيمة والتاريخية واﻷثرية لتخزينها لفترات طويلة
+                كما يوجد لدينا فريق لتغليف وتجهيز اﻷغراض للشحن مثل: تغليف اﻷجهزة والتلفزيونات واﻷغراض القابلة للكسر
+                وتجهيزها للشحن للسفر أو الشحن الجوي أو البحري أو البري مع وزن كل قطعة لمعرفة وزنها.
+              </p>
             </div>
-            <h4 class="h5">خدمات التغليف</h4>
-            <p>تعتبر شركة العون لنقل العفش وخدمات الأثاث ® هي أفضل شركة تغليف عفش في قطر وذلك لأننا خبرة في جميع أعمال
-              التغليف من سنة 2010 وإلى وقتنا هذا فقد قمنا بجميع أنواع التغليف
-              * تغليف العفش للتخزين لفترات طويلة بمواد تغليف مميزة ومواد كيماوية آمنة لمكافحة العثة والحشرات وللمحافظة
-              على الأثاث أثناء فترة التخزين لفترة طويلة وأعادته بعد هذه الفترة كما كان خالي من الأضرار و التشققات بفضل
-              الله ثم خبرتنا في أعمال التغليف.
-              * تغليف العفش لأعمال الصيانة نقوم بتغليف العفش بطريقة مميزة لحين الانتهاء من أعمال الصيانة بطريقة احترافية
-              حتى نحافظ على الأثاث من الغبار أو التلف أثناء أعمال الصيانة في المنزل .
-              * تغليف اﻷثاث للمناسبات وعادته بعد الانتهاء من المناسبة
-              وأيضا لدينا تغليف الشحن ولدينا تغليف القطع الثمينة والقيمة والتاريخية واﻷثرية لتخزينها لفترات طويلة
-              كما يوجد لدينا فريق لتغليف وتجهيز اﻷغراض للشحن مثل: تغليف اﻷجهزة والتلفزيونات واﻷغراض القابلة للكسر
-              وتجهيزها للشحن للسفر أو الشحن الجوي أو البحري أو البري مع وزن كل قطعة لمعرفة وزنها.
-            </p>
           </div>
         </div>
-
-        <!-- الصف الثاني - 3 خدمات -->
         <div class="row mb-5">
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture4.jpg" alt="خدمات التخزين" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture4.jpg" alt="خدمات التخزين" width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمات التخزين</h4>
+              <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+                وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+                لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+                تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+                فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+                ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+                وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+                لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+                مع ضمان على التركيب يصل إلى 6 أشهر
+                وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+                من الخدوش وخلافه .
+                ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+              </p>
             </div>
-            <h4 class="h5">خدمات التخزين</h4>
-            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
-              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
-              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
-              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
-              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
-              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
-              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
-              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
-              مع ضمان على التركيب يصل إلى 6 أشهر
-              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
-              من الخدوش وخلافه .
-              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
-
-            </p>
           </div>
-
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture5.jpg" alt="خدمات الصيانة" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture5.jpg" alt="خدمات الصيانة" width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمات الصيانة</h4>
+              <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+                وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+                لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+                تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+                فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+                ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+                وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+                لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+                مع ضمان على التركيب يصل إلى 6 أشهر
+                وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+                من الخدوش وخلافه .
+                ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+              </p>
             </div>
-            <h4 class="h5">خدمات الصيانة</h4>
-            <p>شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
-              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
-              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
-              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
-              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
-              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
-              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
-              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
-              مع ضمان على التركيب يصل إلى 6 أشهر
-              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
-              من الخدوش وخلافه .
-              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
-
-            </p>
           </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture6.jpg" alt="خدمات الشحن والتجهيز للسفر" width="120"
-                height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture6.jpg" alt="خدمات الشحن والتجهيز للسفر" width="120"
+                  height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5"></h4>خدمات الشحن والتجهيز للسفر</h4>
+              <p>
+                شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+                وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+                لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+                تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+                فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+                ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+                وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+                لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+                مع ضمان على التركيب يصل إلى 6 أشهر
+                وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+                من الخدوش وخلافه .
+                ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+              </p>
             </div>
-            <h4 class="h5"></h4>خدمات الشحن والتجهيز للسفر</h4>
-            <p>
-              شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
-              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
-              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
-              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
-              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
-              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
-              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
-              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
-              مع ضمان على التركيب يصل إلى 6 أشهر
-              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
-              من الخدوش وخلافه .
-              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
-
-
-            </p>
           </div>
         </div>
-
-        <!-- الصف الثالث - 3 خدمات -->
-
         <div class="row mb-5">
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture7.jpg" alt="خدمة نقل الملابس والعطور" width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture7.jpg" alt="خدمة نقل الملابس والعطور" width="120"
+                  height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمة نقل الملابس والعطور</h4>
+              <p>
+                لدينا طريقه في نقل الملابس تجعلنا أفضل شركة نقل ملابس وعطور في قطر وهي الاهتمام بنقل الملابس
+                والإكسسوارات
+                وخلافه بطريقة تميزنا عن غيرنا.
+                حيث نقوم بوضع الملابس في صناديق خاصة نظيفة وتنقل معلقة نفس ما هى وإعادتها في البيت الجديد داخل الكبت كما
+                كانت نظيف ومعلقة دون تكسر أو غبرة أو حاجة إلى إعادة كي.
+                وأيضا نقدم خدمة نقل الإكسسوارات والعطور في صناديق خاصة ونقلها للبيت الجديد بدون أي تلفيات أثناء النقل.
+                وهذ ما يميز شركتنا العون لنقل العفش وخدمات الأثاث ® كأفضل شركة نقل عفش في قطر
+                ونقدم أيضا خدمات نقل غرفة الملابس كاملة من الملابس وعطور وساعات أحذية وجميع الأكسسوارات إلى غرفة الملابس
+                الجديدة نفس ما هي وبنفس الترتيب والمحافظة على أغراضكم الثمينةكأنكم موجودون بالضبط . فقط اتصل الآن أحصل
+                على
+                الخدمة
+              </p>
             </div>
-            <h4 class="h5">خدمة نقل الملابس والعطور</h4>
-            <p>
-              لدينا طريقه في نقل الملابس تجعلنا أفضل شركة نقل ملابس وعطور في قطر وهي الاهتمام بنقل الملابس والإكسسوارات
-              وخلافه بطريقة تميزنا عن غيرنا.
-              حيث نقوم بوضع الملابس في صناديق خاصة نظيفة وتنقل معلقة نفس ما هى وإعادتها في البيت الجديد داخل الكبت كما
-              كانت نظيف ومعلقة دون تكسر أو غبرة أو حاجة إلى إعادة كي.
-              وأيضا نقدم خدمة نقل الإكسسوارات والعطور في صناديق خاصة ونقلها للبيت الجديد بدون أي تلفيات أثناء النقل.
-              وهذ ما يميز شركتنا العون لنقل العفش وخدمات الأثاث ® كأفضل شركة نقل عفش في قطر
-              ونقدم أيضا خدمات نقل غرفة الملابس كاملة من الملابس وعطور وساعات أحذية وجميع الأكسسوارات إلى غرفة الملابس
-              الجديدة نفس ما هي وبنفس الترتيب والمحافظة على أغراضكم الثمينةكأنكم موجودون بالضبط . فقط اتصل الآن أحصل على
-              الخدمة
-
-            </p>
           </div>
-
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture8.jpg" alt="خدمة توفير الكراتين و مواد التغليف للعميل"
-                width="120" height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture8.jpg" alt="خدمة توفير الكراتين و مواد التغليف للعميل"
+                  width="120" height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمة توفير الكراتين و مواد التغليف للعميل</h4>
+              <p>
+                شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
+                وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
+                لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
+                تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
+                فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
+                ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
+                وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
+                لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
+                مع ضمان على التركيب يصل إلى 6 أشهر
+                وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
+                من الخدوش وخلافه .
+                ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
+              </p>
             </div>
-            <h4 class="h5">خدمة توفير الكراتين و مواد التغليف للعميل</h4>
-            <p>
-              شركة العون لنقل العفش وخدمات الأثاث ® هى أفضل شركة لتركيب الأثاث في قطر
-              وهذ يرجع إلى الخبرة التي يمتلكها النجارين وفنيين تركيب اﻷثاث لدينا   
-              لأن بعضهم تصل خبرته في تركيب اﻷثاث لأكثر من 20 عام ليس هذا وفقط ولكن ﻹنانا من أقدم الشركات في قطر التي
-              تقدم هذه الخدمة ونمتلك من العدد والمعدات واﻷدوات ما يؤهلها لهذا
-              فنستطيع ولله الحمد والمنة تنزيل اﻷثاث والمفروشات الثقيلة من الحاويات دون اﻻستعانة بمعدات من الخارج
-              ولدينا العدد والآلات الخاصة بجميع أنواعها لأعمال التركيبات والتي نتميز بها عن غيرنا ولله الحمد والمنة
-              وأيضا نتميز بوجود فريق مختص بتركيب الأثاث التركي بجميع أنواعه وأيضا الأثاث الصيني وجميع الأثاث المستورد
-              لذلك نحن خبراء في تركيب اﻷثاث المنزلي والمكتبي بجميع أنواعه وأيضا متخصصين في تركيب اﻷثاث الطبي والترفيهي
-              مع ضمان على التركيب يصل إلى 6 أشهر
-              وأيضا بعد الانتهاء من أعمال التركيب نقوم بعمل حماية للأثاث بوضع طبقة من الزجاج على الأسطح للمحافظة عليها
-              من الخدوش وخلافه .
-              ‏فقط ارسل لنا المخطط على ال WhatsApp لمعرفة السعر أو اتصل الآن للاستفسار
-            </p>
           </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="d-block mb-4">
-              <img loading="lazy" src="assets/img/Picture9.jpg" alt="خدمة نقل شاشات التلفاز الكبيرة" width="120"
-                height="120">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center">
+              <div class="d-block mb-4">
+                <img loading="lazy" src="assets/img/Picture9.jpg" alt="خدمة نقل شاشات التلفاز الكبيرة" width="120"
+                  height="120">
+                <div class="service-contact-icons">
+                  <a href="tel:+97470700782" class="service-contact-icon phone">
+                    <i class="fa fa-phone"></i>
+                  </a>
+                  <a href="https://wa.me/97470700782" target="_blank" class="service-contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <h4 class="h5">خدمة نقل شاشات التلفاز الكبيرة</h4>
+              <p>
+                لدينا فريق مختص بنقل التلفزيونات كبيرة الحجم وشاشات العرض بطريقة احترافية وعمل صندوق خاص لكل شاشة
+                للمحافظة
+                عليها أثناء النقل كما أن الشركة مسؤولة عن أي أضرار تحدث أثناء النقل لا قدر الله
+                كما نقوم بالتعليق علي الحائط أو تقديم النصيحة والمقترحات بأفضل مكان لوضع التلفاز إذا رغبتم. كما تميز
+                لفريق
+                خاص لنقل شاشات العرض وأعاده تركيبها وتجمع ويوجد لدينا فريق مختص ونقل غرف ال
+              </p>
             </div>
-            <h4 class="h5">خدمة نقل شاشات التلفاز الكبيرة</h4>
-            <p>
-              لدينا فريق مختص بنقل التلفزيونات كبيرة الحجم وشاشات العرض بطريقة احترافية وعمل صندوق خاص لكل شاشة للمحافظة
-              عليها أثناء النقل كما أن الشركة مسؤولة عن أي أضرار تحدث أثناء النقل لا قدر الله
-              كما نقوم بالتعليق علي الحائط أو تقديم النصيحة والمقترحات بأفضل مكان لوضع التلفاز إذا رغبتم. كما تميز لفريق
-              خاص لنقل شاشات العرض وأعاده تركيبها وتجمع ويوجد لدينا فريق مختص ونقل غرف ال
-
-
-            </p>
           </div>
         </div>
-
-
       </div>
     </section>
-
     <section class="wt-section bg-light" id="about">
       <div class="container">
         <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
@@ -618,7 +658,6 @@
         </div>
       </div>
     </section>
-
     <section class="wt-section">
       <div class="container">
         <div class="row justify-content-between align-items-center" data-aos="fade-left" data-aos-easing="linear"
@@ -627,7 +666,6 @@
             <h3 class="mb-4">مهمتنا وأهدافنا</h3>
             <p class="text-muted">مهمتنا هي توفير خدمات نقل وتخزين عالية الجودة تتجاوز توقعات عملائنا. نسعى لأن نكون
               الخيار الأول والأوثق لجميع احتياجات النقل في دولة قطر.</p>
-
             <div class="mt-4">
               <h5>أهدافنا:</h5>
               <ul class="text-muted">
@@ -639,7 +677,6 @@
               </ul>
             </div>
           </div>
-
           <div class="col-md-5">
             <img loading="lazy"
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center"
@@ -648,227 +685,62 @@
         </div>
       </div>
     </section>
-
-
-
     <section class="wt-section" id="portfolio">
       <div class="container">
         <div class="row justify-content-md-center text-center pb-lg-5">
           <div class="col-md-12">
+
             <h2 class="h1">معرض خدماتنا</h2>
             <p>صور وفيديوهات من أعمالنا الفعلية في خدمات النقل والأثاث</p>
+
           </div>
+
+          <div class="row mb-5">
+            <div class="col-12">
+              <h4 class="text-center mb-4">فيديوهات من خدماتنا</h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mb-4">
+              <div class="video-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
+                    title="عملية نقل عفش منزلي كاملة" loading="lazy"></iframe>
+                </div>
+                <div class="video-caption mt-2">
+                  <h6>عملية نقل عفش منزلي كاملة</h6>
+                  <small class="text-muted">شاهد كيف نتعامل مع نقل العفش بحرفية واحتراف</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mb-4">
+              <div class="video-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
+                    title="تركيب مطبخ حديث" loading="lazy"></iframe>
+                </div>
+                <div class="video-caption mt-2">
+                  <h6>تركيب مطبخ حديث</h6>
+                  <small class="text-muted">فريقنا المتخصص في تركيب المطابخ والأثاث</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-        <div class="portfolio-menu mt-2 mb-4 pb-3">
-          <ul class="d-flex flex-wrap justify-content-center">
-            <li class="btn mr-2 mb-2 btn-outline-dark active" data-filter="*">جميع الخدمات</li>
-            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".moving">نقل العفش</li>
-            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".assembly">تركيب الأثاث</li>
-            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".packing">التغليف والتخزين</li>
-            <li class="btn mr-2 mb-2 btn-outline-dark" data-filter=".maintenance">الصيانة</li>
-          </ul>
-        </div>
+        <center>
 
-        <!-- الفيديوهات -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">فيديوهات من خدماتنا</h4>
-          </div>
-          <div class="col-lg-6 col-md-6 col-12 mb-4">
-            <div class="video-container">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
-                  title="عملية نقل عفش منزلي كاملة" loading="lazy"></iframe>
-              </div>
-              <div class="video-caption mt-2">
-                <h6>عملية نقل عفش منزلي كاملة</h6>
-                <small class="text-muted">شاهد كيف نتعامل مع نقل العفش بحرفية واحتراف</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-12 mb-4">
-            <div class="video-container">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen
-                  title="تركيب مطبخ حديث" loading="lazy"></iframe>
-              </div>
-              <div class="video-caption mt-2">
-                <h6>تركيب مطبخ حديث</h6>
-                <small class="text-muted">فريقنا المتخصص في تركيب المطابخ والأثاث</small>
-              </div>
-            </div>
-          </div>
-        </div>
+          <a href="portfolio.html" class="btn btn-brown btn-lg">
+            <i class="fas fa-images"></i> شاهد المعرض الكامل
+          </a>
 
-        <!-- معرض الصور -->
-        <div class="portfolio-item row" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
-          <!-- نقل العفش -->
-          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="نقل العفش"
-                data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
-                data-title="نقل العفش المنزلي" data-description="فريق محترف ومعدات حديثة">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>نقل العفش المنزلي</h5>
-                  <p>فريق محترف ومعدات حديثة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
-                    data-title="نقل العفش المنزلي" data-description="فريق محترف ومعدات حديثة">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item assembly col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="تركيب الأثاث"
-                data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
-                data-title="تركيب الأثاث" data-description="تركيب احترافي وفك وتجميع">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>تركيب الأثاث</h5>
-                  <p>تركيب احترافي وفك وتجميع</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1503602642458-232111445657?w=800&h=600&fit=crop&crop=center"
-                    data-title="تركيب الأثاث" data-description="تركيب احترافي وفك وتجميع">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="التخزين"
-                data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
-                data-title="خدمات التخزين" data-description="مستودعات آمنة ومكيفة">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>خدمات التخزين</h5>
-                  <p>مستودعات آمنة ومكيفة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop&crop=center"
-                    data-title="خدمات التخزين" data-description="مستودعات آمنة ومكيفة">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item assembly col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="تركيب المطابخ"
-                data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
-                data-title="تركيب المطابخ" data-description="فك وتركيب المطابخ والأجهزة">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>تركيب المطابخ</h5>
-                  <p>فك وتركيب المطابخ والأجهزة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop&crop=center"
-                    data-title="تركيب المطابخ" data-description="فك وتركيب المطابخ والأجهزة">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item maintenance col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="الصيانة"
-                data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
-                data-title="خدمات الصيانة" data-description="صيانة وإصلاح الأثاث">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>خدمات الصيانة</h5>
-                  <p>صيانة وإصلاح الأثاث</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop&crop=center"
-                    data-title="خدمات الصيانة" data-description="صيانة وإصلاح الأثاث">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item packing col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="الكراتين"
-                data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
-                data-title="توفير الكراتين" data-description="كراتين عالية الجودة">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>توفير الكراتين</h5>
-                  <p>كراتين عالية الجودة</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop&crop=center"
-                    data-title="توفير الكراتين" data-description="كراتين عالية الجودة">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item moving col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="gallery-item rounded-md overflow-hidden">
-              <img class="img-fluid img-responsive lazyload gallery-image"
-                data-src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop&crop=center"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
-                alt="تحميل الشاحنات"
-                data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
-                data-title="تحميل الشاحنات" data-description="تحميل وتفريغ احترافي">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <h5>تحميل الشاحنات</h5>
-                  <p>تحميل وتفريغ احترافي</p>
-                  <a href="#" class="btn btn-brown btn-sm gallery-btn"
-                    data-img="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop&crop=center"
-                    data-title="تحميل الشاحنات" data-description="تحميل وتفريغ احترافي">
-                    <i class="fas fa-eye"></i> عرض الصورة
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        </center>
 
 
       </div>
-
+      </div>
       </div>
       </div>
     </section>
-
-    <!-- Lightbox for gallery -->
     <div id="lightbox" class="lightbox">
       <div class="lightbox-content">
         <span class="lightbox-close">&times;</span>
@@ -881,8 +753,6 @@
         </div>
       </div>
     </div>
-
-    <!-- قسم المدونة -->
     <section id="blog" class="section py-5" style="background-color: #f8f9fa;">
       <div class="container">
         <div class="row">
@@ -895,9 +765,7 @@
             </div>
           </div>
         </div>
-
         <div class="row g-4">
-          <!-- المقال الأول -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article class="blog-card h-100 shadow-sm">
               <div class="blog-image-wrapper">
@@ -927,8 +795,6 @@
               </div>
             </article>
           </div>
-
-          <!-- المقال الثاني -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article class="blog-card h-100 shadow-sm">
               <div class="blog-image-wrapper">
@@ -957,10 +823,6 @@
               </div>
             </article>
           </div>
-
-
-
-          <!-- المقال الرابع -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <article class="blog-card h-100 shadow-sm">
               <div class="blog-image-wrapper">
@@ -989,8 +851,6 @@
               </div>
             </article>
           </div>
-
-          <!-- المقال الخامس -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <article class="blog-card h-100 shadow-sm">
               <div class="blog-image-wrapper">
@@ -1019,8 +879,6 @@
               </div>
             </article>
           </div>
-
-          <!-- المقال السادس -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <article class="blog-card h-100 shadow-sm">
               <div class="blog-image-wrapper">
@@ -1050,120 +908,12 @@
             </article>
           </div>
         </div>
-
-        <!-- زر عرض المزيد -->
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="#" class="more btn btn-brown btn-lg px-5" data-aos="fade-up">
+            <a href="blog.html" class="more btn btn-brown btn-lg px-5" data-aos="fade-up">
               <i class="ti-plus me-2"></i>
               عرض المزيد
             </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="wt-section" id="tips">
-      <div class="container">
-        <div class="row justify-content-md-center text-center pb-lg-5">
-          <div class="col-md-12">
-            <h2 class="h1">نصائح هامة لنقل آمن</h2>
-            <p>نصائح من خبرائنا لضمان نقل آمن وناجح لممتلكاتكم</p>
-          </div>
-        </div>
-
-        <!-- النصائح التفصيلية -->
-        <div class="tips-content">
-          <!-- نصيحة 1 -->
-          <div id="tip-1" class="tip-section mb-5">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <h4>1. التحضير قبل النقل</h4>
-                <p>التخطيط المسبق هو مفتاح النجاح في عملية النقل:</p>
-                <ul>
-                  <li>ابدأ التحضير قبل أسبوعين من موعد النقل</li>
-                  <li>اصنع قائمة بجميع الأغراض المراد نقلها</li>
-                  <li>احجز شركة النقل مبكراً</li>
-                  <li>اشتر مواد التغليف اللازمة</li>
-                  <li>نظف المنزل الجديد قبل النقل</li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop&crop=center"
-                  class="img-fluid rounded" alt="التحضير قبل النقل">
-              </div>
-            </div>
-          </div>
-
-          <!-- نصيحة 2 -->
-          <div id="tip-2" class="tip-section mb-5">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop&crop=center"
-                  class="img-fluid rounded" alt="تغليف الأثاث">
-              </div>
-              <div class="col-md-8">
-                <h4>2. تغليف الأثاث بشكل صحيح</h4>
-                <p>التغليف السليم يحمي أثاثكم من التلف:</p>
-                <ul>
-                  <li>استخدم بطانيات سميكة للأثاث الخشبي</li>
-                  <li>لف الزجاج والمرايا ببلاستيك الفقاعات</li>
-                  <li>استخدم الكراتين القوية للأغراض الصغيرة</li>
-                  <li>املأ الفراغات بالورق أو الفقاعات</li>
-                  <li>اكتب محتويات كل كرتونة عليها</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- نصيحة 3 -->
-          <div id="tip-3" class="tip-section mb-5">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <h4>3. حماية الأجهزة الإلكترونية</h4>
-                <p>الأجهزة الإلكترونية تحتاج عناية خاصة:</p>
-                <ul>
-                  <li>انزع البطاريات من الأجهزة</li>
-                  <li>احتفظ بالكابلات في أكياس منفصلة</li>
-                  <li>استخدم الكراتين الأصلية إن أمكن</li>
-                  <li>لا تترك الأجهزة في السيارة لفترات طويلة</li>
-                  <li>تأكد من التشغيل في المنزل الجديد</li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=200&fit=crop&crop=center"
-                  class="img-fluid rounded" alt="حماية الأجهزة الإلكترونية">
-              </div>
-            </div>
-          </div>
-
-          <!-- نصيحة 4 -->
-          <div id="tip-4" class="tip-section mb-5">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=200&fit=crop&crop=center"
-                  class="img-fluid rounded" alt="نقل الأثاث الثقيل">
-              </div>
-              <div class="col-md-8">
-                <h4>4. نقل الأثاث الثقيل</h4>
-                <p>تقنيات آمنة لنقل القطع الثقيلة:</p>
-                <ul>
-                  <li>استخدم العربات المتحركة للقطع الثقيلة</li>
-                  <li>ارفع بالساقين وليس بالظهر</li>
-                  <li>اطلب المساعدة لا تحمل وحدك</li>
-                  <li>قم بفك القطع القابلة للفك</li>
-                  <li>احم الأرضيات بالبطانيات</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- زر للمزيد من النصائح -->
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center">
-            <a href="#more-tips" class="btn btn-brown btn-lg">المزيد من النصائح</a>
           </div>
         </div>
       </div>
@@ -1174,13 +924,11 @@
         <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
           <div class="col-md-8 text-center w-md-50 mx-auto mb-0">
             <h2 class="mb-md-2">تواصل معنا</h2>
-            <p class="lead text-brown">💡 نصيحة: التواصل عبر الواتساب أسرع وأسهل!</p>
+            <p class="lead text-brown"> نصيحة: التواصل عبر الواتساب أسرع وأسهل!</p>
             <p>نحن هنا لخدمتكم على مدار الساعة</p>
           </div>
         </div>
-
         <div class="row">
-          <!-- نموذج طلب عرض السعر -->
           <div class="col-md-7">
             <div class="card">
               <div class="card-header bg-primary text-white text-center">
@@ -1206,7 +954,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label class="form-label">المدينة الحالية <span class="text-danger">*</span></label>
@@ -1224,7 +971,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="mb-3">
                     <label class="form-label">نوع الخدمة المطلوبة <span class="text-danger">*</span></label>
                     <select class="form-control" id="serviceType" required>
@@ -1239,14 +985,12 @@
                       يرجى اختيار نوع الخدمة المطلوبة
                     </div>
                   </div>
-
                   <div class="mb-3">
                     <label class="form-label">تفاصيل الأغراض المراد نقلها</label>
                     <textarea class="form-control" id="itemsDetails" rows="4" maxlength="500"
                       placeholder="مثال: غرفة نوم كاملة، صالة مع طاولة تلفاز، مطبخ، أجهزة كهربائية..."></textarea>
                     <small class="form-text text-muted">اختياري - حد أقصى 500 حرف</small>
                   </div>
-
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label class="form-label">التاريخ المفضل للنقل</label>
@@ -1263,7 +1007,6 @@
                       </select>
                     </div>
                   </div>
-
                   <div class="text-center">
                     <button type="submit" class="btn btn-success btn-lg" id="submitBtn">
                       <i class="fab fa-whatsapp"></i> إرسال الطلب عبر الواتساب
@@ -1273,11 +1016,8 @@
               </div>
             </div>
           </div>
-
-          <!-- معلومات التواصل -->
           <div class="col-md-5">
             <div class="contact-info">
-              <!-- رقم الواتساب -->
               <div class="bg-success text-white p-4 d-flex align-items-center mb-4 border rounded-md">
                 <i class="fab fa-whatsapp fa-3x ml-4"></i>
                 <div>
@@ -1286,8 +1026,6 @@
                   <small>متاح 24/7 للرد السريع</small>
                 </div>
               </div>
-
-              <!-- رقم الهاتف -->
               <div class="bg-primary text-white p-4 d-flex align-items-center mb-4 border rounded-md">
                 <i class="fas fa-phone fa-3x ml-4"></i>
                 <div>
@@ -1296,8 +1034,6 @@
                   <small>خدمة عملاء متميزة</small>
                 </div>
               </div>
-
-              <!-- العنوان -->
               <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
                 <i class="fa fa-map-marker-alt fa-3x text-brown ml-4"></i>
                 <div>
@@ -1306,8 +1042,6 @@
                   <small class="text-muted">الدوحة - قطر</small>
                 </div>
               </div>
-
-              <!-- البريد الإلكتروني -->
               <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
                 <i class="fas fa-envelope fa-3x text-brown ml-4"></i>
                 <div>
@@ -1316,8 +1050,6 @@
                   <small class="text-muted">للاستفسارات الرسمية</small>
                 </div>
               </div>
-
-              <!-- ساعات العمل -->
               <div class="bg-white p-4 d-flex align-items-center mb-4 border rounded-md">
                 <i class="fas fa-clock fa-3x text-brown ml-4"></i>
                 <div>
@@ -1330,8 +1062,6 @@
             </div>
           </div>
         </div>
-
-        <!-- خريطة الموقع -->
         <div class="row mt-5">
           <div class="col-12">
             <h4 class="text-center mb-4">خريطة خدماتنا</h4>
@@ -1344,10 +1074,7 @@
         </div>
       </div>
     </section>
-    <!-- End Clients Section -->
   </main>
-
-  <!-- Floating Action Buttons -->
   <div class="floating-buttons">
     <a href="https://wa.me/97451408899" target="_blank" class="floating-btn whatsapp-btn" title="راسلنا على الواتساب">
       <i class="fab fa-whatsapp"></i>
@@ -1356,15 +1083,12 @@
       <i class="fas fa-phone"></i>
     </a>
   </div>
-
-  <!-- Footer -->
   <footer class="bg-dark py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
           <small class="text-white">العون لنقل العفش وخدمات الأثاث &copy; جميع الحقوق محفوظة</small>
         </div>
-
         <div class="col-md-4 align-self-center">
           <ul class="list-inline text-center text-md-right mb-0">
             <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
@@ -1377,19 +1101,13 @@
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
-
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  <!-- End Footer -->
-
-  <!-- Essential JS Only -->
   <script src="assets/vendors/jquery.min.js"></script>
   <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-
-  <!-- Add jQuery Easing inline to fix scrolling-nav.js -->
   <script>
     // Simple jQuery easing functions to replace missing easing library
     $.extend($.easing, {
@@ -1407,15 +1125,11 @@
       }
     });
   </script>
-
   <script defer src="assets/js/scrolling-nav.js"></script>
-
-  <!-- Load on demand - only when needed -->
   <script>
     // Advanced Lazy Loading with Intersection Observer
     function setupLazyLoading() {
       if (!('IntersectionObserver' in window)) return; // Fallback for old browsers
-
       const images = document.querySelectorAll('img[loading="lazy"]');
       const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -1432,10 +1146,8 @@
         rootMargin: '50px 0px',
         threshold: 0.01
       });
-
       images.forEach(img => imageObserver.observe(img));
     }
-
     // Efficient script loading with caching
     const loadedScripts = new Set();
     function loadScript(src, callback) {
@@ -1443,7 +1155,6 @@
         callback && callback();
         return;
       }
-
       const script = document.createElement('script');
       script.src = src;
       script.onload = function () {
@@ -1453,7 +1164,6 @@
       script.onerror = function () {
         console.warn('Failed to load script:', src);
       };
-
       // Use requestIdleCallback for non-critical scripts
       if ('requestIdleCallback' in window) {
         requestIdleCallback(() => document.head.appendChild(script));
@@ -1461,7 +1171,6 @@
         setTimeout(() => document.head.appendChild(script), 0);
       }
     }
-
     // Optimized AOS loading
     let aosLoaded = false;
     function maybeLoadAOS() {
@@ -1479,7 +1188,6 @@
         });
       }
     }
-
     // Conditional loading based on viewport
     function maybeLoadSlick() {
       const portfolioSection = document.querySelector('.portfolio-section, .slick-needed');
@@ -1487,26 +1195,21 @@
         loadScript('assets/vendors/slick-carousel/slick.min.js');
       }
     }
-
     // Throttled scroll handler
     let scrollTimeout;
     function throttledScrollHandler() {
       if (scrollTimeout) return;
-
       scrollTimeout = requestAnimationFrame(() => {
         maybeLoadSlick();
         scrollTimeout = null;
       });
     }
-
     // Initialize everything efficiently
     function initialize() {
       // Setup lazy loading first
       setupLazyLoading();
-
       // Use passive listeners for performance
       window.addEventListener('scroll', throttledScrollHandler, { passive: true });
-
       // Load AOS after initial paint
       if ('requestIdleCallback' in window) {
         requestIdleCallback(maybeLoadAOS, { timeout: 2000 });
@@ -1514,7 +1217,6 @@
         setTimeout(maybeLoadAOS, 800);
       }
     }
-
     // Use the most efficient DOM ready approach
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initialize);
@@ -1522,8 +1224,6 @@
       initialize();
     }
   </script>
-
-  <!-- AOS Animation Library مع تحسينات للأجهزة المحمولة -->
   <script>
     // إصلاح أيقونة navbar toggler
     document.addEventListener('DOMContentLoaded', function () {
@@ -1531,12 +1231,10 @@
       const navbarToggler = document.querySelector('.navbar-toggler');
       const tiMenuIcon = navbarToggler.querySelector('.ti-menu');
       const fallbackIcon = navbarToggler.querySelector('.fas.fa-bars');
-
       // إذا لم تظهر أيقونة ti-menu بشكل صحيح، استخدم الاحتياطية
       setTimeout(() => {
         const computedStyle = window.getComputedStyle(tiMenuIcon, '::before');
         const content = computedStyle.getPropertyValue('content');
-
         // إذا لم تكن الأيقونة تعمل، أظهر الاحتياطية
         if (!content || content === 'none' || content === '""') {
           tiMenuIcon.style.display = 'none';
@@ -1544,14 +1242,12 @@
         }
       }, 100);
     });
-
     // تشغيل AOS مع إعدادات محسنة للأجهزة المحمولة
     document.addEventListener('DOMContentLoaded', function () {
       // تحديد إعدادات AOS حسب حجم الشاشة ونوع الجهاز
       const isMobile = window.innerWidth <= 768;
       const isSlowDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2;
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
       // إعدادات AOS متكيفة - مع فحص وجود AOS أولاً
       if (typeof AOS !== 'undefined') {
         if (isMobile || isSlowDevice || prefersReducedMotion) {
@@ -1576,7 +1272,6 @@
           });
         }
       }
-
       // تحديث AOS عند تغيير حجم الشاشة فقط إذا كان موجوداً
       let resizeTimer;
       window.addEventListener('resize', function () {
@@ -1589,47 +1284,38 @@
       });
     });
   </script>
-
-  <!-- واتساب عرض السعر -->
   <script>
     // إضافة validation للفورم
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('priceQuoteForm');
       const submitBtn = document.getElementById('submitBtn');
-
       // إضافة event listener للفورم
       form.addEventListener('submit', function (event) {
         event.preventDefault();
-
         if (validateForm()) {
           sendWhatsAppQuote();
         }
       });
-
       // validation في الوقت الفعلي
       const inputs = form.querySelectorAll('input, select, textarea');
       inputs.forEach(input => {
         input.addEventListener('input', function () {
           validateField(this);
         });
-
         input.addEventListener('blur', function () {
           validateField(this);
         });
       });
     });
-
     function validateField(field) {
       const value = field.value.trim();
       let isValid = true;
       let errorMessage = '';
-
       // التحقق من الحقول المطلوبة
       if (field.hasAttribute('required') && !value) {
         isValid = false;
         errorMessage = 'هذا الحقل مطلوب';
       }
-
       // التحقق من رقم الهاتف
       if (field.id === 'customerPhone' && value) {
         const phonePattern = /^[0-9]{9,15}$/;
@@ -1638,7 +1324,6 @@
           errorMessage = 'يرجى إدخال رقم هاتف صحيح (9-15 رقم)';
         }
       }
-
       // التحقق من الاسم
       if (field.id === 'customerName' && value) {
         if (value.length < 2) {
@@ -1646,7 +1331,6 @@
           errorMessage = 'الاسم يجب أن يكون حرفين على الأقل';
         }
       }
-
       // التحقق من المدن
       if ((field.id === 'currentCity' || field.id === 'destinationCity') && value) {
         if (value.length < 2) {
@@ -1654,7 +1338,6 @@
           errorMessage = 'اسم المدينة يجب أن يكون حرفين على الأقل';
         }
       }
-
       // إظهار أو إخفاء رسائل الخطأ
       const feedbackElement = field.nextElementSibling;
       if (feedbackElement && feedbackElement.classList.contains('invalid-feedback')) {
@@ -1669,21 +1352,17 @@
           field.classList.remove('is-valid', 'is-invalid');
         }
       }
-
       return isValid;
     }
-
     function validateForm() {
       const form = document.getElementById('priceQuoteForm');
       const requiredFields = form.querySelectorAll('[required]');
       let isFormValid = true;
-
       requiredFields.forEach(field => {
         if (!validateField(field)) {
           isFormValid = false;
         }
       });
-
       if (!isFormValid) {
         // التركيز على أول حقل غير صحيح
         const firstInvalidField = form.querySelector('.is-invalid');
@@ -1691,14 +1370,11 @@
           firstInvalidField.focus();
           firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-
         // إظهار رسالة عامة
         showNotification('يرجى تصحيح الأخطاء المشار إليها باللون الأحمر', 'error');
       }
-
       return isFormValid;
     }
-
     function showNotification(message, type = 'info') {
       // إنشاء عنصر التنبيه
       const notification = document.createElement('div');
@@ -1710,9 +1386,7 @@
         <span>&times;</span>
       </button>
     `;
-
       document.body.appendChild(notification);
-
       // إزالة التنبيه بعد 5 ثواني
       setTimeout(() => {
         if (notification.parentNode) {
@@ -1720,7 +1394,6 @@
         }
       }, 5000);
     }
-
     function sendWhatsAppQuote() {
       // جمع البيانات من النموذج
       const name = document.getElementById('customerName').value.trim();
@@ -1731,7 +1404,6 @@
       const itemsDetails = document.getElementById('itemsDetails').value.trim();
       const preferredDate = document.getElementById('preferredDate').value;
       const preferredTime = document.getElementById('preferredTime').value;
-
       // تنسيق الرسالة
       let message = `*طلب عرض سعر من موقع العون لنقل العفش*\n\n`;
       message += `*الاسم:* ${name}\n`;
@@ -1739,55 +1411,41 @@
       message += `*من:* ${currentCity}\n`;
       message += `*إلى:* ${destinationCity}\n`;
       message += `*نوع الخدمة:* ${serviceType}\n\n`;
-
       if (itemsDetails) {
         message += `*تفاصيل الأغراض:*\n${itemsDetails}\n\n`;
       }
-
       if (preferredDate) {
         message += `*التاريخ المفضل:* ${preferredDate}\n`;
       }
-
       if (preferredTime) {
         message += `*الوقت المفضل:* ${preferredTime}\n`;
       }
-
       message += `\nنتطلع لخدمتكم بأفضل الأسعار والجودة العالية`;
-
       // رقم الواتساب
       const whatsappNumber = '97451408899';      // إنشاء رابط الواتساب
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-
       // فتح الواتساب
       window.open(whatsappURL, '_blank');
     }
-
     // تحسين تجربة المستخدم - التمرير السلس للأقسام
     document.addEventListener('DOMContentLoaded', function () {
-
       const navLinks = document.querySelectorAll('.js-scroll-trigger[href^="#"]');
-
       navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
           // السماح لـ jQuery بالعمل أولاً إذا كان موجوداً
           if (typeof jQuery !== 'undefined') {
             return; // ترك jQuery يتولى الأمر
           }
-
           e.preventDefault();
-
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
-
           if (targetElement) {
             // حساب ارتفاع شريط التنقل
             const navbar = document.querySelector('#mainNav');
             const navbarHeight = navbar ? navbar.offsetHeight : 50;
             const offset = navbarHeight + 20;
-
             // التمرير السريع
             const targetPosition = targetElement.offsetTop - offset;
-
             // استخدام requestAnimationFrame للحصول على أداء أفضل
             requestAnimationFrame(() => {
               window.scrollTo({
@@ -1795,7 +1453,6 @@
                 behavior: 'smooth'
               });
             });
-
             // إغلاق القائمة المنسدلة إذا كانت مفتوحة (للأجهزة المحمولة)
             const navbarToggler = document.querySelector('.navbar-collapse');
             if (navbarToggler && navbarToggler.classList.contains('show')) {
@@ -1809,11 +1466,7 @@
           }
         });
       });
-
-
-
     });
-
     // Lazy loading implementation for portfolio images
     if ('IntersectionObserver' in window) {
       const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -1830,7 +1483,6 @@
         rootMargin: '50px 0px',
         threshold: 0.01
       });
-
       document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
       });
@@ -1842,23 +1494,19 @@
         img.classList.add('lazyloaded');
       });
     }
-
     // Gallery Lightbox functionality
     let currentImageIndex = 0;
     let galleryImages = [];
-
     // Collect all gallery images
     function initGallery() {
       const galleryBtns = document.querySelectorAll('.gallery-btn');
       const galleryImgs = document.querySelectorAll('.gallery-image');
-
       // Collect images from buttons (more reliable data source)
       galleryImages = Array.from(galleryBtns).map(btn => ({
         img: btn.dataset.img,
         title: btn.dataset.title,
         description: btn.dataset.description
       }));
-
       // Add click events to buttons
       galleryBtns.forEach((btn, index) => {
         btn.addEventListener('click', function (e) {
@@ -1867,7 +1515,6 @@
           openLightbox();
         });
       });
-
       // Add click events to images
       galleryImgs.forEach((img, index) => {
         img.addEventListener('click', function (e) {
@@ -1878,57 +1525,45 @@
         });
       });
     }
-
     function openLightbox() {
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
       const lightboxTitle = document.getElementById('lightbox-title');
       const lightboxDescription = document.getElementById('lightbox-description');
-
       const currentImage = galleryImages[currentImageIndex];
-
       lightboxImg.src = currentImage.img;
       lightboxTitle.textContent = currentImage.title;
       lightboxDescription.textContent = currentImage.description;
-
       lightbox.style.display = 'block';
       document.body.style.overflow = 'hidden'; // منع التمرير
     }
-
     function closeLightbox() {
       const lightbox = document.getElementById('lightbox');
       lightbox.style.display = 'none';
       document.body.style.overflow = 'auto'; // إعادة التمرير
     }
-
     function nextImage() {
       currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
       updateLightboxImage();
     }
-
     function prevImage() {
       currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
       updateLightboxImage();
     }
-
     function updateLightboxImage() {
       const lightboxImg = document.getElementById('lightbox-img');
       const lightboxTitle = document.getElementById('lightbox-title');
       const lightboxDescription = document.getElementById('lightbox-description');
-
       const currentImage = galleryImages[currentImageIndex];
-
       lightboxImg.src = currentImage.img;
       lightboxTitle.textContent = currentImage.title;
       lightboxDescription.textContent = currentImage.description;
     }
-
     // Event listeners for lightbox
     document.addEventListener('DOMContentLoaded', function () {
       initGallery();
       initPortfolioFilter();
       initNavbarActiveState();
-
       // Close lightbox events
       document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
       document.getElementById('lightbox').addEventListener('click', function (e) {
@@ -1936,11 +1571,9 @@
           closeLightbox();
         }
       });
-
       // Navigation events
       document.querySelector('.lightbox-next').addEventListener('click', nextImage);
       document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
-
       // Keyboard navigation
       document.addEventListener('keydown', function (e) {
         const lightbox = document.getElementById('lightbox');
@@ -1959,26 +1592,21 @@
         }
       });
     });
-
     // Portfolio Filter functionality
     function initPortfolioFilter() {
       const filterBtns = document.querySelectorAll('.portfolio-menu li[data-filter]');
       const portfolioItems = document.querySelectorAll('.portfolio-item .item');
-
       filterBtns.forEach(btn => {
         btn.addEventListener('click', function () {
           const filter = this.getAttribute('data-filter');
-
           // Remove active class from all buttons
           filterBtns.forEach(b => b.classList.remove('active'));
           // Add active class to clicked button
           this.classList.add('active');
-
           // Filter items with smooth animation
           portfolioItems.forEach(item => {
             // Remove any existing classes
             item.classList.remove('hidden', 'visible');
-
             if (filter === '*') {
               // Show all items
               item.classList.add('visible');
@@ -2003,32 +1631,26 @@
         });
       });
     }
-
     // Navbar Active State functionality
     function initNavbarActiveState() {
       const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
       const sections = document.querySelectorAll('section[id]');
-
       // Function to update active link based on scroll position
       function updateActiveNavLink() {
         let current = '';
         const scrollY = window.pageYOffset;
         const navbarHeight = document.querySelector('#mainNav')?.offsetHeight || 70;
-
         sections.forEach(section => {
           const sectionTop = section.offsetTop - navbarHeight - 50;
           const sectionHeight = section.offsetHeight;
-
           if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
           }
         });
-
         // Special case for top of page
         if (scrollY < 100) {
           current = 'top';
         }
-
         // Update active class
         navLinks.forEach(link => {
           link.classList.remove('active');
@@ -2038,20 +1660,16 @@
           }
         });
       }
-
       // Debounce scroll function for better performance
       let scrollTimeout;
       function debouncedScroll() {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(updateActiveNavLink, 10);
       }
-
       // Update on scroll
       window.addEventListener('scroll', debouncedScroll);
-
       // Update on page load
       setTimeout(updateActiveNavLink, 100);
-
       // Add click event to navbar links for immediate active state
       navLinks.forEach(link => {
         link.addEventListener('click', function () {
@@ -2059,7 +1677,6 @@
           navLinks.forEach(l => l.classList.remove('active'));
           // Add active to clicked link
           this.classList.add('active');
-
           // Update after smooth scroll completes
           setTimeout(updateActiveNavLink, 800);
         });
@@ -2067,9 +1684,41 @@
     }
   </script>
 
-  <!-- END JAVASCRIPTS -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
 
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+        (e.ctrlKey && e.key === 'U') || (e.ctrlKey && e.key === 'S')) {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('copy', function (e) {
+      e.preventDefault();
+      return false;
+    });
+
+    document.addEventListener('cut', function (e) {
+      e.preventDefault();
+      return false;
+    });
+
+    document.oncopy = function () { return false; };
+    document.oncut = function () { return false; };
+
+    if (typeof document.onselectstart != 'undefined') {
+      document.onselectstart = function () { return false; };
+    }
+  </script>
 </body>
-<!-- End Body -->
 
 </html>
